@@ -14,12 +14,23 @@
 - **Bosses**
 > The bosses page will contain an index of many details about the bosses of the game. It will contain their locations, weaknesses, and effective charm combos against them.
 - **Characters**
-> The characters page will contain detailed information about the many notable characters you encounter in the game.
-- **Places**
-> The places page will contain the map of the game. It will note down the important locations of the map and some history of these said locations, and it will also include tips for each of the locations.
+> The characters page will contain detailed information about the many notable characters you encounter in the game. It will include where you can find them, what they do, and some of their lore.
 - **Charms**
 > The charms page will contain an index of all of the charms in the game, and it will include all the details about what they do, how to obtain them, and how they can be used efficiently. It will also include the many charm combos you can do. 
 ### 6. How Javascript Will Be Incorporated: 
 - placeholder
 ### 7. Wireframe:
-- [Link to Wireframe (Made using Canva) (Webpage names are indicated as the slide names)](https://www.canva.com/design/DAG2-C6AFNo/IvwIGROKGSOj-9E5tISQhg/edit?utm_content=DAG2-C6AFNo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [Link to Full Wireframe (Made using Canva)](https://www.canva.com/design/DAG2-C6AFNo/IvwIGROKGSOj-9E5tISQhg/edit?utm_content=DAG2-C6AFNo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+#### Homepage
+![Homepage](./assets/homepage.jpg)
+#### Storyline
+![Storyline1](./assets/storyline1.jpg)
+![Storyline2](./assets/storyline2.jpg)
+#### Characters 
+![Character1](./assets/character1.jpg)
+![Charcater2](./assets/character2.jpg)
+#### Charms
+![Charm1](./assets/charm1.jpg)
+![Charm2](./assets/charm2.jpg)
+#### Bosses
+![Boss1](./assets/boss1.jpg)
