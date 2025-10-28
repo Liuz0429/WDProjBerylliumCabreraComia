@@ -21,4 +21,4 @@
 ### 6. How Javascript Will Be Incorporated: 
 - placeholder
 ### 7. Wireframe:
-- [Link to Wireframe (Made using Canva)](https://www.canva.com/design/DAG2-C6AFNo/IvwIGROKGSOj-9E5tISQhg/edit?utm_content=DAG2-C6AFNo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [Link to Wireframe (Made using Canva)(Webpage names are indicated as the slide names)](https://www.canva.com/design/DAG2-C6AFNo/IvwIGROKGSOj-9E5tISQhg/edit?utm_content=DAG2-C6AFNo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
