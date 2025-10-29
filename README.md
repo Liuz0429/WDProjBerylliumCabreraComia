@@ -22,10 +22,10 @@
 ### 7. Wireframe:
 - [Link to Full Wireframe (Made using Canva)](https://www.canva.com/design/DAG2-C6AFNo/IvwIGROKGSOj-9E5tISQhg/edit?utm_content=DAG2-C6AFNo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 #### Homepage
-![Homepage](./assets/Homepage.jpg)
+![Homepage](./assets/homepage.jpg)
 #### Storyline
-![Storyline1](./assets/Storyline1.jpg)
-![Storyline2](./assets/Storyline2.jpg)
+![Storyline1](./assets/storyline1.jpg)
+![Storyline2](./assets/storyline2.jpg)
 #### Characters 
 ![Character1](./assets/CharIndex1.jpg)
 ![Character2](./assets/CharIndex2.jpg)
