@@ -17,10 +17,12 @@ body {
 }
 
 section.header {
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background-color: #333058;
     width: auto;
-    height: 40px;
-    margin: -8px;  
+    height: 40px;  
 }
 
 nav.header {
@@ -30,9 +32,16 @@ nav.header {
     height: 40px;
 }
 
+a.infoboxlink {
+    display: block;
+    color: #e2a9f1; 
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
 a {
-    display: inline-block;
-    padding: 0 5%;
+    display: flex;
+    padding: 0 20%;
     color: #cb6ce6;
     text-decoration: none;
 }
@@ -46,7 +55,6 @@ footer {
     background-color: rgba(160, 83, 182, 0.69);
     padding: 15px;
     height: 100%;
-    margin: -7px;
     margin-top: 17px;
     color: #e2a9f1;
 }
