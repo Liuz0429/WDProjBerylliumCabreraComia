@@ -22,7 +22,8 @@ section.header {
     justify-content: center;
     background-color: #333058;
     width: auto;
-    height: 40px;  
+    height: 4rem;
+    font-size: 1.5rem;
 }
 
 nav.header {
