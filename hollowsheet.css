@@ -16,17 +16,14 @@ body {
     background-repeat: no-repeat;
     background-position:center;
 }
-
 .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #333058;
-    height: 4rem;
+    height: 2.5rem;
     width: auto;
     font-size: 1.5rem;
-}
-
-nav > a {
-    display: inline-block;
-    vertical-align: middle;
 }
 
 a.infoboxlink {
@@ -36,9 +33,17 @@ a.infoboxlink {
     font-weight: bold;
 }
 
+h2>a:hover {
+    color:#cb6ce6;
+}
+
+nav > a {
+    margin: 3rem;
+    color: #cb6ce6;
+    text-decoration: none;
+}
+
 a {
-    display: flex;
-    padding: 0 20%;
     color: #cb6ce6;
     text-decoration: none;
 }
@@ -52,6 +57,6 @@ footer {
     background-color: rgba(160, 83, 182, 0.69);
     padding: 15px;
     height: 100%;
-    margin-top: 17px;
+    margin-top: 4rem;
     color: #e2a9f1;
 }
