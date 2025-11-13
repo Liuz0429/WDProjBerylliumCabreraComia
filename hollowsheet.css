@@ -11,7 +11,7 @@ h1 {
 
 body {
     background-color: black;
-    background-image: url("assets/HPbackground.png");
+    background-image: url("./assets/HPbackground.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
