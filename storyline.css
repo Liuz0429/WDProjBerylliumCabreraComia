@@ -4,16 +4,37 @@
    padding: 0;
 }
 
-h1 {
-    font-size: 70px;
-    color: #cb6ce6;
+.title {
+    text-align: center;
+    background-image: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 20%;
+    width: 100%;
+    overflow: hidden;
 }
 
 body {
-    background-image: url(./assets/HPbackground.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color:#1e1c3b;
+}
+
+h1 {
+    font-size: 6rem;
+    color: #cb6ce6;
+    display: inline-block;
+}
+
+h1+h2 {
+    color:#cb6ce6;
+    display: inline-block;
+    font-size: 5rem;
+    margin-left:1rem;
+}
+
+h2 {
+    color:#e2a9f1;
+    font-size:6.7rem;
 }
 
 .header {
@@ -33,8 +54,8 @@ a.infoboxlink {
     font-weight: bold;
 }
 
-h2>a:hover {
-    color:#cb6ce6;
+p {
+    color:#e2a9f1;
 }
 
 nav > a {
@@ -59,14 +80,4 @@ footer {
     height: 100%;
     margin-top: 4rem;
     color: #e2a9f1;
-}
-
-section.infobox:hover {
-    width: 47vw;
-    height: 22vh;
-}
-
-section.infobox-right:hover {
-    width: 47vw;
-    height: 22vh;
 }
