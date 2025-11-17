@@ -11,14 +11,38 @@
   <title>Storyline</title>
 
   <style>
+    div {
+      display: flex;
+      justify-content: center;
+    }
+
     section.infobox {
         display: inline-flex;
         justify-content: center;
         align-items: center;
         background-color: rgb(51, 48, 88, 0.82);
-        width: 90vw;
+        width: 60vw;
         height: 40vh;
+        float: left; 
     }
+
+    .sidebox {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(51, 48, 88, 0.82);
+      color: #e2a9f1;
+      width: 20vw;
+      height: 40vh;
+      float: left;
+      margin-top: 1rem;
+    }
+
+    section > h3 {
+      color: #cb6ce6;
+      font-size: 2.5rem;
+    }
+
   </style>
 
 </head>
@@ -39,6 +63,12 @@
       <h2>HALLOWNEST</h2>
       <img src="../assets/LineDesign.png" alt="line design" style="margin-bottom: 1rem;">
     </section>
+    
+    <div>
+      <section class="sidebox">
+        <h3>OVERVIEW</h3>
+      </section>
+    </div>
     
     <div style="text-align: center; margin-top: 1rem;">
       <section class="infobox">
