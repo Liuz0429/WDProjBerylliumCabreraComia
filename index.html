@@ -51,13 +51,18 @@
     }
 
     .linkicon {
-      display: block;
-      margin-right: 6.5rem;
-      margin-left: -4rem;
+      display: inline;
       width: 2rem;
       height: 2rem;
       background-color: #cb6ce6;
       padding: 0.25rem;
+      float: left;
+    }
+
+    nav {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center; 
     }
 
   </style>
@@ -65,7 +70,7 @@
 
 <body>
   <section class="header">
-      <img src="./assets/knight.png" alt="knight" class="linkicon">
+  <img src="./assets/knight.png" alt="knight" class="linkicon">
     <nav>
       <a href="./index.html">HOME</a>
       <a href="./public/storyline.html">STORYLINE</a>
