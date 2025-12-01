@@ -35,6 +35,12 @@ h2>a:hover {
     color:#cb6ce6;
 }
 
+nav {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
 nav > a {
     margin: 3rem;
     color: #cb6ce6;
