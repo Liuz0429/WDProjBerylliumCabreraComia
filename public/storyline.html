@@ -38,6 +38,18 @@
         margin-left: 8rem;
     }
 
+    section.infobox-left1 {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 48, 88, 0.82);
+        width: 60vw;
+        height: 50vh;
+        float: right; 
+        margin-top: 1rem;
+        margin-left: 8rem;
+    }
+
     .sidebox {
       display: inline-flex;
       justify-content: center;
@@ -68,20 +80,68 @@
       margin-right: 1rem;
     }
 
+    .sidebox-right1 {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: rgb(51, 48, 88, 0.82);
+      color: #e2a9f1;
+      width: 20vw;
+      height: 50vh;
+      float: right;
+      margin-top: 1rem;
+      margin-left: 1rem;  
+      margin-right: 1rem;
+    }
+
     section > h3 {
       color: #cb6ce6;
       font-size: 2.5rem;
       text-align: center;
     }
 
+    .overview {
+        text-align: right;
+        background-color: rgb(51, 48, 88, 0.82);
+        width: 60vw;
+        height: 60vh;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 20rem;
+    }
+
     .linkicon {
       display: block;
+      float: left;
       margin-right: 6.5rem;
-      margin-left: -35.3rem;
       width: 2rem;
       height: 2rem;
       background-color: #cb6ce6;
       padding: 0.25rem;
+    }
+
+    .centering {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hallowseal {
+      position: absolute;
+      margin-top:1rem;
+      max-width: 40%;
+      height: auto;
+      margin-left: -40rem;
+    }
+
+    .loretablet {
+      position: absolute;
+      margin-top:1rem;
+      max-width: 30%;
+      height: auto;
+      margin-left: 55rem;
+      margin-top: 25rem;
     }
 
   </style>
@@ -106,28 +166,37 @@
       <img src="../assets/LineDesign.png" alt="line design" style="margin-bottom: 1rem;">
     </section>
     
-    <div>
-      <section class="sidebox">
-        <h3>OVERVIEW</h3>
+    <div class="centering">
+      <img src="../assets/Hallownestseal.png" alt="knight" class="hallowseal">
+
+      <section class="overview">
+        <h3 style="margin-top: 1rem">OVERVIEW</h3>
+        <p style="margin-right: 1rem">info go here yiepyripeyieyipyepiep !!!!!!</p>
       </section>
     </div>
-    
-    <div style="text-align: center;">
-      <section class="infobox">
-        <p>info go here yiepyripeyieyipyepiep !!!!!!</p>
+
+    <div class="centering">
+      <img src="../assets/lore tablet.png" alt="knight" class="loretablet">
+    </div>
+
+    <div>
+      <section class="infobox-left1">
+        <p style="margin-left: 1rem; margin-right: 1rem;">Long ago, there was a civilization that worshipped the Void (the dark pit under Hallownest).
+          They built the Soul Totems, the Arcane Eggs, and the Void Idol. The Void, which they worshipped,
+          has a dislike for beings of light, such as the Pale King and the Radiance, as light weakens it. The Void is also known to be able to interact with bugs similar
+          to the Radiance. They are the first who learned how to harness the power of SOUL. The cause of their disappearance is unknown. <br> After them, the main dieties of each tribe appeared.
+          The Radiance was the first, worshipped by the Moth Tribe. They discovered the Dream Realm through SOUL, where the dreams of both living and dead reside.
+          Unn was worshipped by the Mosskin Tribe, a peaceful bunch that allowed travelers to pass through, contrary to the Mantis Tribe, a ferocious group that respect
+          only those who can defeat their leaders in combat. Next is the Hive, headed by the Hive Queen, Vespa. They are a group united under the hive mind that attack those possessing foreign blood.
+          Then there was the Spider Tribe which was ruled by Herrah the Beast, a queen that had outlived her consort. Next were the Snail Shamans, a small group with a skill for SOUL magic, and notice when dream
+          magic was used on them. Finally, there is the Mushroom Clan, a territorial group that developed their own language that can only be read by equipping the Spore Shroom Charm. </p>
       </section>
     </div>
 
     <div>
-      <section class="infobox-left">
-        <p>imagine mo nalang</p>
-      </section>
-    </div>
-
-    <div>
-      <section class="sidebox-right">
-        <h3 style="font-size: 3.5rem; margin-bottom: -5rem;">BEFORE</h3> 
-        <h3 style="font-size: 2rem; margin-top: -5rem; color:#e2a9f1;">HALLOWNEST</h3>
+      <section class="sidebox-right1">
+        <h3 style="font-size: 3.5rem; margin-top: 1rem; margin-bottom: 23rem;">BEFORE</h3> 
+        <h3 style="font-size: 2rem; margin-top: -45rem; color:#e2a9f1;">HALLOWNEST</h3>
       </section>
     </div>
 
