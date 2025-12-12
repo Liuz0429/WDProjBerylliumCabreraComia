@@ -18,6 +18,8 @@ body {
 
 .header {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #333058;
     height: 2.5rem;
     width: auto;
