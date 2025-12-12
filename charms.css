@@ -26,13 +26,6 @@
     font-size: 1.5rem;
  }
  
- a.infoboxlink {
-     display: block;
-     color: #e2a9f1; 
-     font-size: 2.5rem;
-     font-weight: bold;
- }
- 
  h2>a:hover {
      color:#cb6ce6;
  }
@@ -65,14 +58,4 @@
      height: 100%;
      margin-top: 4rem;
      color: #e2a9f1;
- }
- 
- section.infobox:hover {
-     width: 47vw;
-     height: 22vh;
- }
- 
- section.infobox-right:hover {
-     width: 47vw;
-     height: 22vh;
  }
