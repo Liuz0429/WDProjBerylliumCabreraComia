@@ -39,24 +39,18 @@ h2 {
     font-size:9rem;
 }
 
-.header {
+ .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: #333058;
     height: 2.5rem;
     width: auto;
     font-size: 1.5rem;
-}
+ }
 
 p {
     color:#e2a9f1;
-}
-
-nav > a {
-    margin: 3rem;
-    color: #cb6ce6;
-    text-decoration: none;
 }
 
 a {
