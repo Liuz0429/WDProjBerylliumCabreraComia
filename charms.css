@@ -4,11 +4,6 @@
     padding: 0;
  }
  
- h1 {
-     font-size: 70px;
-     color: #cb6ce6;
- }
- 
  body {
      background-image: url(./assets/HPbackground.png);
      background-repeat: no-repeat;
@@ -18,7 +13,7 @@
  
  .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: #333058;
     height: 2.5rem;

@@ -27,8 +27,8 @@
     }
 
     .INFOBOX {
-      display: flex;
-      align-items: flex-start;
+      display: inline-flex;
+      justify-content: flex-start;
       background-color: #333058;
       opacity: 0.9;
       width: 25%;
@@ -36,6 +36,12 @@
       padding: 1%;
       margin: auto;
       flex-wrap: wrap;
+      margin-left: 2.5%;
+      margin-right: 2.5%
+    }
+
+    div {
+      text-align: center;
     }
 
     .fixing {
@@ -45,7 +51,7 @@
       font-size: 1.5rem;
     }
 
-    h2 {
+    .name {
       color: #e2a9f1;
       font-size: 3rem;
       margin-left: 1rem;
@@ -66,6 +72,7 @@
 
     p {
       color:#cb6ce6;
+      text-align: left;
     }
 
     h3 {
@@ -74,6 +81,20 @@
       margin-left: 1.5rem;
       margin-top: -1rem;
       text-align: center;
+    }
+
+    .title {
+      background-color:#333058;
+      opacity: 0.9;
+      width: 40%;
+      height: 20%;
+    }
+
+    .centeringtitle {
+      display: flex;
+      justify-content: center;
+      margin-top: 2%;
+      margin-bottom: 2%;
     }
 
   </style>
@@ -89,26 +110,77 @@
        <a href="./charms.html">CHARMS</a>
     </nav>
    </section>
+   
+   <div class="centeringtitle">
+    <section class="title">
+      <img src="../assets/LineDesign.png" alt="LineDesign" style="margin-bottom: -1.5rem;">
+      <h2 style="color:#cb6ce6; font-size: 4.5rem;">| CHARM |</h2>
+      <h1 style="color:#e2a9f1; font-size: 7rem;">INDEX</h1>
+      <img src="../assets/LineDesign.png" alt="LineDesign" style="margin-top: -2rem;">
+    </section>
+   </div>
 
-   <section class="INFOBOX">
+   <div>
+    <section class="INFOBOX">
     <img src="../assets/knight.png" alt="knight" class="infoboximg">
     <div>
-      <h2>NAME</h2>
+      <h2 class="name">NAME</h2>
       <p class="fixing">location</p>
     </div>
 
-    <ul>
-      <li>use 1 yaypaypa</li>
-      <li>use 2 yaypaypa</li>
-      <li>use 3 yaypaypa</li>
-    </ul>
+      <ul>
+        <li>use 1 yaypaypa</li>
+        <li>use 2 yaypaypa</li>
+        <li>use 3 yaypaypa</li>
+      </ul>
 
-    <h3>COMBOS W/ <br> [insert here]</h3>
+      <h3>COMBOS W/ <br> [insert here]</h3>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
       in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
-   </section>
+    </section>
+
+    <section class="INFOBOX">
+      <img src="../assets/knight.png" alt="knight" class="infoboximg">
+      <div>
+        <h2 class="name">NAME</h2>
+        <p class="fixing">location</p>
+      </div>
+
+      <ul>
+        <li>use 1 yaypaypa</li>
+        <li>use 2 yaypaypa</li>
+        <li>use 3 yaypaypa</li>
+      </ul>
+
+      <h3>COMBOS W/ <br> [insert here]</h3>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+    </section>
+
+    <section class="INFOBOX">
+      <img src="../assets/knight.png" alt="knight" class="infoboximg">
+      <div>
+        <h2 class="name">NAME</h2>
+        <p class="fixing">location</p>
+      </div>
+
+      <ul>
+        <li>use 1 yaypaypa</li>
+        <li>use 2 yaypaypa</li>
+        <li>use 3 yaypaypa</li>
+      </ul>
+
+      <h3>COMBOS W/ <br> [insert here]</h3>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+    </section>
+   </div>
 
     <footer>
         <p>© 2025 L. Cabrera & H. Comia, 9-Beryllium. </p> <br>
