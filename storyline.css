@@ -39,7 +39,7 @@ h2 {
     font-size:9rem;
 }
 
- .header {
+.header {
     display: flex;
     justify-content: space-around;
     align-items: center;
