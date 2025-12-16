@@ -54,6 +54,7 @@ footer {
     display: block;
     margin: auto;
     margin-top: 1rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     width: 35rem;
     height: 20rem;
@@ -99,7 +100,7 @@ nav {
 }
 
 li {
-    list-style-image: url("../assets/knightresize.png");
+    list-style-image: url("./assets/knightresize.png");
     font-size: 1.2rem;
     margin-left: 2rem;
     margin-top: -0.1rem;
@@ -201,3 +202,58 @@ h1 {
     width: 95%;
     justify-content: center;
 }
+
+.filters {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 1.5%;
+    background-color: #333058;
+    opacity: 0.9;
+    font-size: 1.4rem;
+    width: 85%;
+}
+
+.filterbtns {
+    margin-bottom: 1%;
+}
+
+.filterbtns button {
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    font-style: italic;
+    background-color: #cb6ce6;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filterbtns button:hover {
+    width: 20rem;
+    height: 3rem;
+    background-color:white;
+}
+
+.filterbtns button:active {
+    background-color:#e2a9f1;
+}
+
+.charset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.item {
+    padding: 0.2rem;
+    border-radius: 1%;
+    background-color: aliceblue;
+    margin: 0.5rem;
+    border: 2.5px solid black;
+}
+
+.hidden {
+    display: none;
+}
+
