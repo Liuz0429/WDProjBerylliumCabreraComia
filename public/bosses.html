@@ -7,7 +7,7 @@
   <meta name="keywords" content="Bosses Index">
   <meta name="author" content="Cabrera L. & Comia H.">
   <link rel="icon" type="image/png" href="/assets/knight.png">
-  <link rel="stylesheet" href="../hollowsheet.css">
+  <link rel="stylesheet" href="../bosses.css">
   <title>Bosses Index</title>
   <style>
     body {
@@ -39,10 +39,6 @@
       margin-left: 60rem;
     }
 
-    li {
-      list-style-image: url("../assets/knightresize.png");
-    }
-
     .linkicon {
       display: block;
       float: left;
@@ -61,6 +57,10 @@
 
     .floatingicon {
       flex: 1;
+    }
+
+    .bossnav {
+      list-style-image: url("../assets/knightresize.png");
     }
 
     .header {
@@ -91,24 +91,22 @@
     .bossinfo h1 {
       font-size: 5rem;
       color: #e2a9f1;
-      display: inline-block;
+      display: inline;
       margin-bottom: 1rem;
       padding-right: 2rem;
-      border-right: 4px solid #e2a9f1;
     }
 
     .bossinfo p {
       text-align: left;
       display: block;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: #cb6ce6;
     }
 
     .bossinfo {
-      margin-left: 7rem;
       margin-top: 4rem;
       background-color: rgb(51, 48, 88, 0.82);
-      width: 70rem;
+      width: 60rem;
       height: auto;
       padding: 1.5rem;
     }
@@ -125,22 +123,18 @@
       margin-bottom: -0.3rem;
     }
 
-    .parseparator {
-      border-top: 2px solid #e2a9f1;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      padding-top: 1rem;
-      margin-right: 40%;
-    }
-
     .bossinfo h3 {
       display: inline;
       font-size: 2rem;
       color: #e2a9f1;
-      margin-left: 6rem;
       font-size: 3rem;
-      border-left: 4px solid #e2a9f1;
-      padding-left: 2rem;
+    }
+
+    .imgbox {
+      display: inline-block;
+      background-color: #cb6ce6;
+      width: 40rem;
+      height: 20rem;
     }
   
   </style>
@@ -169,7 +163,7 @@
     <section class="selection">
 
       <section class="first">
-        <ul>
+        <ul class="bossnav">
           <li><a href="">Boss 1</a></li>
           <li><a href="">Boss 2</a></li>
           <li><a href="">Boss 3</a></li>
@@ -181,7 +175,7 @@
       </section>
 
       <section class="second"> 
-        <ul>
+        <ul class="bossnav">
           <li><a href="">Boss 8</a></li>
           <li><a href="">Boss 9</a></li>
           <li><a href="">Boss 10</a></li>
@@ -193,7 +187,7 @@
       </section>
 
       <section class="third">
-        <ul>
+        <ul class="bossnav">
           <li><a href="">Boss 15</a></li>
           <li><a href="">Boss 16</a></li>
           <li><a href="">Boss 17</a></li>
@@ -205,7 +199,7 @@
       </section>
 
       <section class="fourth">
-        <ul>
+        <ul class="bossnav">
           <li><a href="">Boss 22</a></li>
           <li><a href="">Boss 23</a></li>
           <li><a href="">Boss 24</a></li>
@@ -220,15 +214,13 @@
   </section>
 
   <div class="bossinfo">
-
-    <section class="infobox">
-      <h1>NAME</h1>
+      <h1 style="font-size: 700%;">NAME</h1>
+      <h3 style="font-size: 400%; margin-right: -2rem; margin-left: -2rem; border-top: #e2a9f1 solid 5px;">LOCATION</h3>
       <ul>
-        <li>info 1 yaypaypa</li>
-        <li>info 2 yaypaypa</li>
-        <li>info 3 yaypaypa</li>
+        <li>Lorem ipsum dolor</li>
+        <li style="margin-top: 0.5rem;">Lorem ipsum dolor</li>
+        <li style="margin-top: 0.5rem;">Lorem ipsum dolor</li>
       </ul>
-      <h3>LOCATION</h3>
       <div class="parseparator">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
@@ -237,8 +229,10 @@
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
         in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
       </div>
-    </section>
-    
+  </div>
+
+  <div class="imgbox">
+    something somethi yaopapapa
   </div>
 
   <footer style="margin-top:10rem;">
