@@ -18,7 +18,7 @@
 - **Charm Index**
 > The charm index page will contain an index of all of the charms in the game, and it will include all the details about what they do, how to obtain them, and how they can be used efficiently. It will also include the many charm combos you can do. 
 ### 6. How Javascript Will Be Incorporated: 
-- Javascript will be incorporated in both the Character Index and Boss Index page. Each of the little characters shown in the index will have brief animations and movement when the user hovers over their image. This will add a little flavor and life to our webpage, mimicking the same liveliness of the characters in the actual game itself.
+- Javascript will be incorporated in the Character, Boss, and Charm Index. For easier browsing through these indexes, each of these webpages will have a filter system using Javascript. Characters, Bosses, and Charms will be split by and grouped according to certain broad categories or traits, and the user can filter out for these categories. For example: The Bosses in the Bosses page will be split according to easy difficulty, moderate difficulty, and hard difficulty. The user can filter out for each of these difficulties.
 ### 7. Wireframe:
 - [Link to Full Wireframe (Made using Canva)](https://www.canva.com/design/DAG2-C6AFNo/IvwIGROKGSOj-9E5tISQhg/edit?utm_content=DAG2-C6AFNo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 #### Homepage
