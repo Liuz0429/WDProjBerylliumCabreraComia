@@ -7,7 +7,7 @@ buttons.forEach(button => {
             button.classList.add('active'); 
             const category = button.getAttribute('data-category');
                 items.forEach(item => {
-                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                    if (category === 'All' || item.getAttribute('data-category') === category) {
                         item.classList.remove('hidden'); 
                     } else {
                         item.classList.add('hidden');

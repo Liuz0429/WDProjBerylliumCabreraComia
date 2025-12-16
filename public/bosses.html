@@ -20,9 +20,8 @@
       justify-content: center;
       align-items: center;
       background-color: rgb(51, 48, 88, 0.82);
-      width: 40rem;
-      height: 22rem;
-      margin-left: 16rem;
+      width: 35rem;
+      height: 19rem;
       margin-top: 2rem;
     }
 
@@ -32,11 +31,12 @@
       align-items: center;
       font-size: 1.5rem;
       gap: 6rem;
-      margin-top: -20.5rem;
       background-color: rgb(51, 48, 88, 0.82);
-      width: 45rem;
+      width: 55rem;
       height: 19rem;
-      margin-left: 60rem;
+      margin-left: 2rem;
+      margin-top: 2rem;
+      padding-left: 2rem;
     }
 
     .linkicon {
@@ -61,6 +61,7 @@
 
     .bossnav {
       list-style-image: url("../assets/knightresize.png");
+      font-size: 1rem;
     }
 
     .header {
@@ -104,11 +105,13 @@
     }
 
     .bossinfo {
+      display: inline-flex;
       margin-top: 4rem;
       background-color: rgb(51, 48, 88, 0.82);
-      width: 60rem;
+      width: 55rem;
       height: auto;
-      padding: 1.5rem;
+      padding: 1rem;
+      margin-right: 1rem;
     }
 
     .bossinfo ul {
@@ -131,10 +134,20 @@
     }
 
     .imgbox {
-      display: inline-block;
+      display: block;
       background-color: #cb6ce6;
-      width: 40rem;
+      width: 20rem;
       height: 20rem;
+      margin-top: 4rem;
+    }
+
+    .centering {
+      display: flex;
+      justify-content: center;
+    }
+
+    .fixing {
+      display: block;
     }
   
   </style>
@@ -153,7 +166,7 @@
     </div>
    </section>
 
-  <section>
+  <section class="centering"> 
     <section class="title">
       <h1 style="margin-top:1rem; font-size: 8rem;">BOSS</h1>
       <h2 style="font-size: 5rem; color:#e2a9f1;">INDEX</h2>
@@ -164,76 +177,82 @@
 
       <section class="first">
         <ul class="bossnav">
-          <li><a href="">Boss 1</a></li>
-          <li><a href="">Boss 2</a></li>
-          <li><a href="">Boss 3</a></li>
-          <li><a href="">Boss 4</a></li>
-          <li><a href="">Boss 5</a></li>
-          <li><a href="">Boss 6</a></li>
-          <li><a href="">Boss 7</a></li>
+          <li><a href="">Broken Vessel</a></li>
+          <li><a href="">Brooding Mawlek</a></li>
+          <li><a href="">Brothers Oro & Mato</a></li>
+          <li><a href="">Crystal Guardian</a></li>
+          <li><a href="">Dung Defender</a></li>
+          <li><a href="">False Knight</a></li>
+          <li><a href="">Flukemarm</a></li>
         </ul>
       </section>
 
       <section class="second"> 
         <ul class="bossnav">
-          <li><a href="">Boss 8</a></li>
-          <li><a href="">Boss 9</a></li>
-          <li><a href="">Boss 10</a></li>
-          <li><a href="">Boss 11</a></li>
-          <li><a href="">Boss 12</a></li>
-          <li><a href="">Boss 13</a></li>
-          <li><a href="">Boss 14</a></li>
+          <li><a href="">God Tamer</a></li>
+          <li><a href="">Great Nailsage Sly</a></li>
+          <li><a href="">Grimm</a></li>
+          <li><a href="">Hive Knight</a></li>
+          <li><a href="">Hollow Knight</a></li>
+          <li><a href="">Hornet</a></li>
+          <li><a href="">Mantis Lords</a></li>
         </ul>
       </section>
 
       <section class="third">
         <ul class="bossnav">
-          <li><a href="">Boss 15</a></li>
-          <li><a href="">Boss 16</a></li>
-          <li><a href="">Boss 17</a></li>
-          <li><a href="">Boss 18</a></li>
-          <li><a href="">Boss 19</a></li>
-          <li><a href="">Boss 20</a></li>
-          <li><a href="">Boss 21</a></li>
+          <li><a href="">Massive Moss Charger</a></li>
+          <li><a href="">Nosk</a></li>
+          <li><a href="">Oblobbles</a></li>
+          <li><a href="">Paintmaster Sheo</a></li>
+          <li><a href="">Radiance</a></li>
+          <li><a href="">Soul Master</a></li>
+          <li><a href="">Soul Warrior</a></li>
         </ul>
       </section>
 
       <section class="fourth">
         <ul class="bossnav">
-          <li><a href="">Boss 22</a></li>
-          <li><a href="">Boss 23</a></li>
-          <li><a href="">Boss 24</a></li>
-          <li><a href="">Boss 25</a></li>
-          <li><a href="">Boss 26</a></li>
-          <li><a href="">Boss 27</a></li>
-          <li><a href="">Boss 28</a></li>
+          <li><a href="">Traitor Lord</a></li>
+          <li><a href="">The Collector</a></li>
+          <li><a href="">Uumuu</a></li>
+          <li><a href="">Vengefly King</a></li>
+          <li><a href="">Watcher Knight</a></li>
+          <li><a href="">Zote</a></li>
         </ul>
       </section>
       
     </section>
   </section>
 
-  <div class="bossinfo">
-      <h1 style="font-size: 700%;">NAME</h1>
-      <h3 style="font-size: 400%; margin-right: -2rem; margin-left: -2rem; border-top: #e2a9f1 solid 5px;">LOCATION</h3>
-      <ul>
-        <li>Lorem ipsum dolor</li>
-        <li style="margin-top: 0.5rem;">Lorem ipsum dolor</li>
-        <li style="margin-top: 0.5rem;">Lorem ipsum dolor</li>
-      </ul>
+  <div class="fixing">
+  <section class="centering">
+    <div class="bossinfo">
+      <div class="fixing">
+        <h1 style="font-size: 350%;">BROKEN VESSEL</h1>
+        <h3 style="font-size: 150%; margin-right: -2rem; margin-left: -2rem; padding-top:1rem; border-top: #e2a9f1 solid 5px;">ANCIENT BASIN</h3>
+        <ul style="font-size: 120%">
+          <li>First of many</li>
+          <li style="margin-top: 0.5rem;">Infected</li>
+        </ul>
       <div class="parseparator">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p> <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+        <p>The Broken Vessel blocks the path to the Monarch Wings, the Infection reanimating its corpse. When defeated,
+          the husk of its body reaches out to the Knight before passing on. If hit with the Dream Nail, you face the
+          Lost Kin, a stronger version of the Broken Vessel that is still infected with Lightseeds. When defeated, the 
+          spirit of the vessel offers the Knight a bow before departing. <br><br>
+
+          Recommended Charms: Quick Focus, Mark of Pride/Longnail (extend reach), Spore Shroom/Defender's Crest (remove Infected Balloon)<br>
+          Recommended Spells/Other: Vengeful Spirit/Shade Soul Spell (knock-back effect), Desolate Dive/Descending Dark Spell (>damage), 
+          Cyclone Smash (stagger + corner)
+        </p>
       </div>
+    </div>
   </div>
 
-  <div class="imgbox">
-    something somethi yaopapapa
-  </div>
+    <div class="imgbox">
+      <img src="../assets/Broken Vessel.webp" alt="knight" style="width:100%; margin-top: 15%;">
+    </div>
+  </section>
 
   <footer style="margin-top:10rem;">
       <p>© 2025 L. Cabrera & H. Comia, 9-Beryllium. </p> <br>
