@@ -19,6 +19,8 @@
   </style>
 </head>
 <body>
+  <script src="/public/filters.js"></script>
+
   <section class="header">
     <div class="floatingicon">
       <img src="../assets/knight.png" alt="knight" class="linkicon">
@@ -37,6 +39,29 @@
         <h1 style="margin-top:1rem; font-size: 5rem;">CHARACTER</h1>
         <h2 style="font-size:8rem; color:#e2a9f1;">INDEX</h2>
         <img src="../assets/LineDesign.png" alt="line design" style="margin-bottom: 1rem;">
+      </section>
+
+      <section class="filters">
+        <h2 style="margin-bottom: 1rem; color:#e2a9f1; font-size: 2.8rem;">Character Index Filters (based on character type)</h2>
+        <div class="filterbtns">
+          <button data-category="All" class="active">All</button>
+          <button data-category="fil1">Merchant-type Characters</button>
+          <button data-category="fil2">Quest Giver Characters</button>
+          <button data-category="fil3">Miscellaneous Characters</button>
+        </div>
+
+        <div class="charset">
+          <div class="item" data-category="fil1">Character 1 (Merchant-type)</div>
+          <div class="item" data-category="fil1">Character 2 (Merchant-type)</div>
+          <div class="item" data-category="fil1">Character 3 (Merchant-type)</div>
+          <div class="item" data-category="fil2">Character 1 (Quest-type)</div>
+          <div class="item" data-category="fil2">Character 2 (Quest-type)</div>
+          <div class="item" data-category="fil2">Character 3 (Quest-type)</div>
+          <div class="item" data-category="fil3">Character 1 (Misc-type)</div>
+          <div class="item" data-category="fil3">Character 2 (Misc-type)</div>
+          <div class="item" data-category="fil3">Character 3 (Misc-type)</div>
+        </div>
+      
       </section>
 
       <div class="fixing">
