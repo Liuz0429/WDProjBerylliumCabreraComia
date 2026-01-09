@@ -33,9 +33,9 @@
 - [Link to Wireframe (Homepage, Storyline, Boss Index, Character Index, Charm Index) (Made using Canva)](https://www.canva.com/design/DAG2-C6AFNo/IvwIGROKGSOj-9E5tISQhg/edit?utm_content=DAG2-C6AFNo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - [Link to Wireframe (Sign-up and Sign-in page, Bookmarks page, Interactive Map page) (Made using Canva)](https://www.canva.com/design/DAG91JzZuK8/3Pg6odTuUH-8TLotRVHOFQ/edit?utm_content=DAG91JzZuK8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 #### Sign Up
-![Sign Up]()
+![Sign Up](./assets/SignUp.jpg)
 #### Sign In
-![Sign In]()
+![Sign In](./assets/SignIn.jpg)
 #### Homepage
 ![Homepage](./assets/homepage.jpg)
 #### Storyline
@@ -50,6 +50,7 @@
 #### Bosses
 ![Boss1](./assets/BossIndex.jpg)
 #### Bookmarks
-![Bookmarks]()
+![Bookmarks](./assets/Bookmarks.jpg)
 ### Interactive Map
-![Interactive Map]()
+![Interactive Map1](./assets/InMap1.jpg)
+![Interactive Map2](./assets/InMap2.jpg)
