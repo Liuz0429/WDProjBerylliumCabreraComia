@@ -27,7 +27,9 @@
 > The Interractive Map page will contain an interactive map of the whole Hollow Knight map. The user will be able to click on certain points/areas of the map to access further information on the area that they clicked on.
 ### 6. How Javascript Will Be Incorporated: 
 - Javascript will be incorporated in the Character, Boss, and Charm Index. For easier browsing through these indexes, each of these webpages will have a filter system using Javascript. Characters, Bosses, and Charms will be split by and grouped according to certain broad categories or traits, and the user can filter out for these categories. For example: The Bosses in the Bosses page will be split according to easy difficulty, moderate difficulty, and hard difficulty. The user can filter out for each of these difficulties.
-### 7. Wireframe:
+### 7. How HTML Form Will Be Incorporated:
+- HTML Form will be used to grant special access to certain features or webpages when a user signs up. 
+### 8. Wireframe:
 - [Link to Wireframe (Homepage, Storyline, Boss Index, Character Index, Charm Index) (Made using Canva)](https://www.canva.com/design/DAG2-C6AFNo/IvwIGROKGSOj-9E5tISQhg/edit?utm_content=DAG2-C6AFNo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - [Link to Wireframe (Sign-up and Sign-in page, Bookmarks page, Interactive Map page) (Made using Canva)](https://www.canva.com/design/DAG91JzZuK8/3Pg6odTuUH-8TLotRVHOFQ/edit?utm_content=DAG91JzZuK8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 #### Sign Up
