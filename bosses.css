@@ -97,3 +97,7 @@ footer {
 .hidden {
     display: none;
 }
+
+.charset div {
+    background-color: #e2a9f1;
+}

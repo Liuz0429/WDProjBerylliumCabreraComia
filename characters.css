@@ -342,4 +342,8 @@ h1 {
       flex: 1;
     }
 
+    .charset div {
+        background-color: #e2a9f1;
+    }
+
 
