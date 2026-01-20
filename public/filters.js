@@ -16,3 +16,20 @@ buttons.forEach(button => {
     });
 });
 
+function changeBorder() {
+    const bah = [document.getElementById('waycomp'), document.getElementById('gath'), document.getElementById('scatch'), document.getElementById('seat'), 
+        document.getElementById('dmas'), document.getElementById('smast'), document.getElementById('gsong'), document.getElementById('fgreed'), document.getElementById('sshell'), 
+        document.getElementById('fheart'), document.getElementById('sstone'), document.getElementById('geleg'), document.getElementById('fstreng'), document.getElementById('stwist'), 
+        document.getElementById('sbod'), document.getElementById('hblow'), document.getElementById('qslash'), document.getElementById('lnail'), document.getElementById('mpride'), 
+        document.getElementById('ffallen'), document.getElementById('tagony'), document.getElementById('bshell'), document.getElementById('fnest'), document.getElementById('dcrest'), 
+        document.getElementById('gwom'), document.getElementById('qfoc'), document.getElementById('dfoc')];
+    let sacri = document.getElementById(location.hash.substring(1));
+    for (let i = 0; i < bah.length; i++) {
+        if (bah[i] !== sacri) {
+            bah[i].style.border = 'none';
+        } else {
+            bah[i].style.border = '5px solid #e2a9f1';
+        }
+    }
+}
+
