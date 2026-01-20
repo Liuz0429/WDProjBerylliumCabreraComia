@@ -143,17 +143,23 @@
 
   <section class="filters" style="margin-top: 2rem;">
     <h2 style="margin-bottom: 1rem; color:#e2a9f1; font-size: 2.8rem;">Charm Index Filters (based on charm use)</h2>
+    <p style="text-align: center; margin-bottom: 1.3rem; font-size: 1.4rem;">Use the filter buttons below to filter out for specific types of charms according to how they are used! 
+      <br><b style="color:rgb(255, 255, 255);">Utility charms</b> don't really do anything in combat and are only for non-combat parts of the game, such as helping in gaining Geo
+      or helping in gaining Soul.
+      <br><b style="color:rgb(255, 255, 255);">Defensive charms</b> mainly help the player in combat by giving them an extra layer of defense or way to avoid or negate damage against enemies.
+      <br><b style="color:rgb(255, 255, 255);">Offensive charms</b> mainly boost the player's DPS output.
+    </p>
     <div class="filterbtns">
       <button data-category="All" class="active">All</button>
-      <button data-category="fil1">Utility</button>
-      <button data-category="fil2">Defensive</button>
-      <button data-category="fil3">Offensive</button>
+      <button data-category="fil1" style="color:rgb(223, 223, 223);">Utility</button>
+      <button data-category="fil2" style="color:rgb(14, 84, 124);">Defensive</button>
+      <button data-category="fil3" style="color:rgb(119, 29, 29);">Offensive</button>
     </div>
 
     <!-- fil1 is for utility, fil2 is for defensive, fil3 is for offensive -->
 
     <div class="charset">
-      <div class="item" data-category="fil1"><a href="#waycomp">Wayward Compass</a></div>
+      <div class="item" data-category="fil1"><a href="#waycomp">Wayward Compass</a></div> 
       <div class="item" data-category="fil1"><a href="#gath">Gathering Swarm</a></div>
       <div class="item" data-category="fil1"><a href="#scatch">Soul Catcher</a></div>
       <div class="item" data-category="fil1"><a href="#seat">Soul Eater</a></div>
@@ -176,7 +182,10 @@
       <div class="item" data-category="fil2"><a href="#tagony">Thorns of Agony</a></div>
       <div class="item" data-category="fil2"><a href="#bshell">Baldur Shell</a></div>
       <div class="item" data-category="fil3"><a href="#fnest">Flukenest</a></div>
-      <div class="item" data-category="fil"><a href="#dcrest">Defender's Crest</a></div>
+      <div class="item" data-category="fil3"><a href="#dcrest">Defender's Crest</a></div>
+      <div class="item" data-category="fil3"><a href="#gwom">Glowing Womb</a></div>
+      <div class="item" data-category="fil1"><a href="#qfoc">Quick Focus</a></div>
+      <div class="item" data-category="fil1"><a href="#dfoc">Deep Focus</a></div>
     </div>
 
     <script src="filters.js"></script>
@@ -679,6 +688,69 @@
 
       <p>This charm makes the player constantly emit a damaging yellow-brown aura when equipped. The aura is not very powerful and has very little range, making it useful only for 
         really specific situations.
+      </p>
+    </section>
+  </div>
+
+  <div class="troublshoetingIB">
+    <section class="INFOBOX" id="gwom">
+      <img src="../assets/Gwom.webp" alt="Glowing Womb" class="infoboximg">
+      <div>
+        <h2 class="name">Glowing Womb</h2>
+        <p class="fixing">Forgotten Crossroads</p>
+      </div>
+
+      <ul>
+        <li>Obtained by going to a hidden entrance to the right of the False Knight arena in the ceiling after a series of columns. The player will
+          need the Crystal Heart for this, as there is a long spike tunnel that can only be traversed with such.
+        </li>
+        <li style="font-style: italic;">"Drains the SOUL of its bearer and uses it to birth hatchlings."</li>
+        <li>Costs 2 Notches to equip.</li>
+      </ul>
+
+      <!--  <h3>COMBOS W/ <br> [insert here]</h3> -->
+
+      <p>This charm uses the player's Soul to spawn hatchlings which deal damage to enemies on contact. As the player will use up Soul for this charm that may otherwise
+        be used for spells or healing, it is advised to use this charm for a build that focuses utilizing Nail damage.
+      </p>
+    </section>
+
+    <section class="INFOBOX" id="qfoc">
+      <img src="../assets/QFoc.webp" alt="Quick Focus" class="infoboximg">
+      <div>
+        <h2 class="name">Quick Focus</h2>
+        <p class="fixing">Forgotten Crossroads</p>
+      </div>
+
+      <ul>
+        <li>Bought from Salubra for 800 Geo.</li>
+        <li style="font-style: italic;">"A charm containing a crystal lens."</li>
+        <li>Costs 3 Notches to equip.</li>
+      </ul>
+
+      <!--  <h3>COMBOS W/ <br> [insert here]</h3> -->
+
+      <p>This charm makes focusing Soul around 33% faster. The startup time of charging Soul, however, is not affected by this charm. Quick Focus is
+        especially useful in situations where the player has to deal with lots of combat.
+      </p>
+    </section>
+    
+    <section class="INFOBOX" id="dfoc">
+      <img src="../assets/DFoc.webp" alt="Deep Focus" class="infoboximg">
+      <div>
+        <h2 class="name">Deep Focus</h2>
+        <p class="fixing">Crystal Peak</p>
+      </div>
+
+      <ul>
+        <li>Found in a hidden cave made entirely of crystals. Obtaining this requires the Crystal Heart.</li>
+        <li style="font-style: italic;">"Naturally formed within a crystal over a long period. Draws in SOUL from the surrounding air."</li>
+        <li>Costs 4 Notches to equip.</li>
+      </ul>
+
+      <!--  <h3>COMBOS W/ <br> [insert here]</h3> -->
+
+      <p>This charm doubles the Masks healed when using Focus at the cost of increasing the player's focus time by around 65%, not including the startup time of charging Focus.
       </p>
     </section>
   </div>
