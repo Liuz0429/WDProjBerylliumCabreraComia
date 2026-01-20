@@ -25,7 +25,7 @@
             }
 
             h1 {
-                margin-top: 7rem;
+                margin-top: 10vh;
                 color: #cb6ce6;
                 font-size: 7rem;
             }
@@ -49,7 +49,7 @@
 
             button {
                 border: none;
-                margin-top: -15rem;
+                margin-top: -35vh;
                 transition-duration: 1s;
                 display: block;
                 width: 15vw;
@@ -65,9 +65,13 @@
                 height: 0;
             }
 
-            a {
+            .signupbutton {
                 text-decoration: none;
                 color: #e2a9f1;
+            }
+
+            a {
+                color:#cb6ce6;
             }
 
             button:hover {
@@ -85,6 +89,31 @@
             p {
                 display: inline;
             }
+
+            .labels {
+                width: 1.5rem;
+                margin-right: 0.5rem;
+            }
+
+            input {
+                background-color: #151239;
+                color: #e2a9f1;
+                width: 30vw;
+                height: 4vh;
+                border-right:none;
+                border-top: none;
+                border-left: none;
+                font-size: 1.2rem;
+            }
+
+            fieldset {
+                border: none;
+            }
+
+            .altlinks {
+                margin-top: -25vh;
+                margin-left: -11vw;
+            }
         </style>
     </head>
 
@@ -92,7 +121,25 @@
         <div class="centering">
             <section class="infobox">
                 <h1>Sign Up</h1> <div class="line-break"></div>
-                <button type="button"><a href="../index.html">➤ Sign Up</a> </button>
+
+                <form action="register.html" method="get">
+                    <fieldset style="margin-top: -5rem">
+                        <label> <img src="../assets/username.png" class="labels"> <input type="text" name="uname" id="uname" required /> 
+                        <br/><br/>
+                        <label> <img src="../assets/password.png" class="labels"> <input type="text" name="password" id="password" required />
+                    </fieldset>
+                </form>
+
+                <div class="line-break"></div>
+
+                <nav class="altlinks">
+                    <a href="#">Sign in instead?</a>
+                    <div class="line-break"></div>
+                    <a href="/index.html">Use website without signing up?</a>
+                </nav>
+
+                <div class="line-break"></div>
+                <button type="button"><a href="../index.html" class="signupbutton">➤ Sign Up</a> </button>
             </section>
         </div>
 
