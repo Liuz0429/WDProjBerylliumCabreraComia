@@ -22,14 +22,15 @@ function changeBorder() {
         document.getElementById('fheart'), document.getElementById('sstone'), document.getElementById('geleg'), document.getElementById('fstreng'), document.getElementById('stwist'), 
         document.getElementById('sbod'), document.getElementById('hblow'), document.getElementById('qslash'), document.getElementById('lnail'), document.getElementById('mpride'), 
         document.getElementById('ffallen'), document.getElementById('tagony'), document.getElementById('bshell'), document.getElementById('fnest'), document.getElementById('dcrest'), 
-        document.getElementById('gwom'), document.getElementById('qfoc'), document.getElementById('dfoc')];
-    let sacri = document.getElementById(location.hash.substring(1));
+        document.getElementById('gwom'), document.getElementById('qfoc'), document.getElementById('dfoc'), document.getElementById('lheart'), document.getElementById('lcore'), 
+        document.getElementById('jbless')]; 
+    let hash = document.getElementById(location.hash.substring(1));
     for (let i = 0; i < bah.length; i++) {
-        if (bah[i] !== sacri) {
+        if (bah[i] !== hash) {
             bah[i].style.border = 'none';
         } else {
             bah[i].style.border = '5px solid #e2a9f1';
         }
-    }
+    } 
 }
 
