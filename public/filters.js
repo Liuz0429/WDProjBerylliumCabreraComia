@@ -23,7 +23,8 @@ function changeBorder() {
         document.getElementById('sbod'), document.getElementById('hblow'), document.getElementById('qslash'), document.getElementById('lnail'), document.getElementById('mpride'), 
         document.getElementById('ffallen'), document.getElementById('tagony'), document.getElementById('bshell'), document.getElementById('fnest'), document.getElementById('dcrest'), 
         document.getElementById('gwom'), document.getElementById('qfoc'), document.getElementById('dfoc'), document.getElementById('lheart'), document.getElementById('lcore'), 
-        document.getElementById('jbless')]; 
+        document.getElementById('jbless'), document.getElementById('hblood'), document.getElementById('sspore'), document.getElementById('sshadow'), document.getElementById('sunn'),
+        document.getElementById('nglory'), document.getElementById('wsong')]; 
     let hash = document.getElementById(location.hash.substring(1));
     for (let i = 0; i < bah.length; i++) {
         if (bah[i] !== hash) {
