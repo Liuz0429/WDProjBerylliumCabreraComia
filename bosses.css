@@ -9,13 +9,6 @@ h1 {
     color: #cb6ce6;
 }
 
-body {
-    background-image: url(./assets/HPbackground.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 .header {
     display: flex;
     justify-content: space-around;
@@ -54,6 +47,7 @@ footer {
     opacity: 0.9;
     font-size: 1.4rem;
     width: 85%;
+    margin-top: 3rem;
 }
 
 .filterbtns {
