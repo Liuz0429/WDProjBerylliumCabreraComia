@@ -1,3 +1,4 @@
+// For filters
 const buttons = document.querySelectorAll('.filterbtns button');
 const items = document.querySelectorAll('.item');
 
@@ -16,6 +17,7 @@ buttons.forEach(button => {
     });
 });
 
+// For index entry highlighting
 function changeBorder() {
     const bah = [document.getElementById('waycomp'), document.getElementById('gath'), document.getElementById('scatch'), document.getElementById('seat'), 
         document.getElementById('dmas'), document.getElementById('smast'), document.getElementById('gsong'), document.getElementById('fgreed'), document.getElementById('sshell'), 
@@ -35,3 +37,57 @@ function changeBorder() {
     } 
 }
 
+// For accounts
+let accountString = localStorage.getItem("accs")
+if (!accountString) { 
+    listofacc = {} 
+} 
+else listofacc = JSON.parse(accountString)
+
+if (!listofacc) { 
+    const hey = [document.getElementById("yoyo"), document.getElementById("yoy")];
+    hey[0].style.display = "none";
+    hey[1].style.display = "none";
+}
+
+if (listofacc) {
+    for (let key in listofacc) {
+        console.log(key)
+        console.log(listofacc[key])
+    }
+    const what = document.getElementById("son");
+    what.style.display = "none";
+
+}
+
+const form = document.getElementById("dForm"); 
+
+form.addEventListener("submit", function(e) { 
+    e.preventDefault(); 
+
+    if (confirm("Sign up with these details?")) {   
+
+        const data = new FormData(form);
+
+        const obj = Object.fromEntries(data.entries()); 
+
+        listofacc[obj.uname] = {};
+        for (let key in obj) { 
+            if (key != "uname") { 
+                listofacc[obj.uname][key] = obj[key];
+            }
+        }
+        
+        console.log(listofacc) 
+        accountString = JSON.stringify(listofacc) 
+        localStorage.setItem("accs", accountString) 
+        form.submit();
+    }
+  });
+
+
+form.addEventListener("reset", function(e) { // 
+  if (!confirm("Clear all account details?")) {
+    e.preventDefault();
+  }
+});

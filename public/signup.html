@@ -40,7 +40,7 @@
                 background-color: #151239;
             }
 
-            button {
+            .rah {
                 border: none;
                 margin-top: -35vh;
                 transition-duration: 1s;
@@ -67,7 +67,7 @@
                 color:#cb6ce6;
             }
 
-            button:hover {
+            .rah:hover {
                 background-color:#cb6ce6;
                 width: 17vw;
                 height: 10vh;
@@ -88,7 +88,7 @@
                 margin-right: 0.5rem;
             }
 
-            input {
+            .bruhstyle input {
                 background-color: #151239;
                 color: #e2a9f1;
                 width: 30vw;
@@ -127,6 +127,56 @@
             .formatting {
                 display: inline-flex;
             }
+
+            .o {
+                margin-top: 2vh;
+            }
+
+            .o legend {
+                color: #cb6ce6;
+                font-size: 1.5vw;
+                margin-bottom: 0.5vh;
+            }
+
+            .o button {
+                background-color: #665691;
+                color: #000000;
+                width: 8vw;
+                height: 5vh;
+                font-size: 1.2vw;
+                border-radius: 40px;
+                border: none;
+                transition-duration: 0.9s;
+            }
+
+            .o button:hover {
+                background-color: #246424;
+                width: 12vw;
+                height: 7vh;
+                font-size: 1.5vw;
+                border-radius: 60px;
+            }
+
+            .o input[type="reset"] {
+                background-color: #665691;
+                color: #000000;
+                width: 8vw;
+                height: 5vh;
+                font-size: 1.2vw;
+                border-radius: 40px;
+                border: none;
+                transition-duration: 0.9s;
+                margin-left: 0.2rem;
+            }
+
+            .o input[type="reset"]:hover {
+                background-color: #791313;
+                width: 12vw;
+                height: 7vh;
+                font-size: 1.5vw;
+                border-radius: 60px;
+            }
+
         </style>
     </head>
 
@@ -136,26 +186,29 @@
             <section class="infobox">
                 <h1>Sign Up</h1> <div class="line-break"></div>
 
-                <form action="register.html" method="get">
-                    <fieldset style="margin-top: -5rem">
+                <form id="dForm" method="get">
+                    <fieldset class="bruhstyle" style="margin-top: -5rem">
                         <label> <img src="../assets/username.png" class="labels"> <input type="text" name="uname" id="uname" required /> 
                         <br/><br/>
                         <label> <img src="../assets/password.png" class="labels"> <input type="text" name="password" id="password" required />
                     </fieldset>
+                    <fieldset class="o">
+                        <legend>Submit?</legend>
+                        <button type="submit" onclick="window.location.href = '../index.html';"> Accept </button>
+                        <input type="reset" value=" Clear " />
+                    </fieldset> 
                 </form>
 
                 <div class="line-break"></div>
                 <div class="line-break"></div>
 
                 <nav class="altlinks">
-                    <a href="#">Sign in instead?</a>
-                    <div class="line-break"></div>
                     <a href="/index.html">Use website without signing up?</a>
                 </nav>
 
                 <div class="line-break"></div>
-                <button type="button"><a href="../index.html" class="signupbutton">➤ Sign Up</a> </button>
             </section>
-        </div>
+                </div>
+    <script src="javascriptyummy.js"></script>
     </body>
 </html>
