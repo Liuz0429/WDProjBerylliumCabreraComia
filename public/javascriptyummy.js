@@ -39,34 +39,16 @@ function changeBorder() {
 
 // For accounts
 let accountString = localStorage.getItem("accs")
-if (!accountString) { 
-    listofacc = {} 
-} 
+if (!accountString) { listofacc = {} } 
 else listofacc = JSON.parse(accountString)
-
-if (!listofacc) { 
-    const hey = [document.getElementById("yoyo"), document.getElementById("yoy")];
-    hey[0].style.display = "none";
-    hey[1].style.display = "none";
-}
-
-if (listofacc) {
-    for (let key in listofacc) {
-        console.log(key)
-        console.log(listofacc[key])
-    }
-    const what = document.getElementById("son");
-    what.style.display = "none";
-
-}
 
 const form = document.getElementById("dForm"); 
 
 form.addEventListener("submit", function(e) { 
     e.preventDefault(); 
 
-    if (confirm("Sign up with these details?")) {   
-
+  
+ if (confirm("Sure You Want To Save Your Work?")) { 
         const data = new FormData(form);
 
         const obj = Object.fromEntries(data.entries()); 
@@ -86,8 +68,26 @@ form.addEventListener("submit", function(e) {
   });
 
 
-form.addEventListener("reset", function(e) { // 
+form.addEventListener("reset", function(e) { 
   if (!confirm("Clear all account details?")) {
     e.preventDefault();
   }
 });
+
+function list() {
+    console.log(listofacc);
+
+    const gar = console.log(listofacc);
+    
+    if (gar === null) { 
+    const hey = [document.getElementById("yoyo"), document.getElementById("yoy")];
+    hey[0].style.display = "none";
+    hey[1].style.display = "none";
+    }
+
+    if (gar !== null) {
+    const what = document.getElementById("son");
+    what.style.display = "none";
+    }
+}
+
