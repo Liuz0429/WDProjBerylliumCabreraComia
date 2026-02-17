@@ -59,7 +59,6 @@ form.addEventListener("submit", function(e) {
                 listofacc[obj.uname][key] = obj[key];
             }
         }
-        
         console.log(listofacc) 
         accountString = JSON.stringify(listofacc) 
         localStorage.setItem("accs", accountString) 
@@ -76,16 +75,14 @@ form.addEventListener("reset", function(e) {
 
 function list() {
     console.log(listofacc);
-
-    const gar = console.log(listofacc);
-    
-    if (gar === null) { 
+    const listlength = Object.keys(listofacc).length;
+    if (listlength === 0) { 
     const hey = [document.getElementById("yoyo"), document.getElementById("yoy")];
     hey[0].style.display = "none";
     hey[1].style.display = "none";
     }
 
-    if (gar !== null) {
+    if (listlength !== 0) {
     const what = document.getElementById("son");
     what.style.display = "none";
     }
