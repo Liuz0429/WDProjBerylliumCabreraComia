@@ -9,8 +9,6 @@
 ### 5. Website Outline:
 - **Sign-up page:**
 > The sign-up page will simply ask for a username and password when signing up. Signing up will grant special permissions and access to certain webpages.
-- **Sign-in page:**
-> The sign-in page will use the created username and password to sign-in. 
 - **Homepage:** 
 > The homepage will just be a simple menu, including the description of the website, and easy navigation to the other webpages.  
 - **Storyline**
@@ -34,8 +32,6 @@
 - [Link to Wireframe (Sign-up and Sign-in page, Bookmarks page, Interactive Map page) (Made using Canva)](https://www.canva.com/design/DAG91JzZuK8/3Pg6odTuUH-8TLotRVHOFQ/edit?utm_content=DAG91JzZuK8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 #### Sign Up
 ![Sign Up](./assets/SignUp.jpg)
-#### Sign In
-![Sign In](./assets/SignIn.jpg)
 #### Homepage
 ![Homepage](./assets/homepage.jpg)
 #### Storyline

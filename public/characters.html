@@ -18,7 +18,7 @@
     }
   </style>
 </head>
-<body>
+<body onhashchange="changeBorder2()">
   <section class="header">
     <div class="floatingicon">
       <img src="../assets/knight.png" alt="knight" class="linkicon">
@@ -41,63 +41,70 @@
         </section>
       </div>
 
-      <section class="filters">
+      <section class="filterz" id="filterz">
         <h2 style="margin-bottom: 1rem; color:#e2a9f1; font-size: 2.8rem;">Character Index Filters (based on character type)</h2>
+      <p style="text-align: center; margin-bottom: 1.3rem; font-size: 1.4rem; color:#cb6ce6;">Use the filter buttons below to filter out for specific types of characters
+        according to what they do for the player! 
+      <br><br><b style="color:rgb(255, 255, 255);">Merchant-type Characters</b> sell or give various items to players for a price, such as Geo.
+      <br><b style="color:rgb(255, 255, 255);">Quest Giver Characters</b> give the player quests to complete.
+      <br><b style="color:rgb(255, 255, 255);">Miscellaneous Characters</b> are characters that do not fit into the other categories, and usually have their own unique gimmick.
+       </p>
         <div class="filterbtns">
           <button data-category="All" class="active">All</button>
-          <button data-category="fil1">Merchant-type Characters</button>
-          <button data-category="fil2">Quest Giver Characters</button>
-          <button data-category="fil3">Miscellaneous Characters</button>
+          <button data-category="fil1" style="color:rgb(231, 211, 97);">Merchant-type Characters</button>
+          <button data-category="fil2" style="color:rgb(14, 84, 124);">Quest Giver Characters</button>
+          <button data-category="fil3" style="color:rgb(6, 94, 20);">Miscellaneous Characters</button>
         </div>
 
         <div class="charset">
-          <div class="item" data-category="fil3">Bardoon</div>
-          <div class="item" data-category="fil3">Bretta</div>
-          <div class="item" data-category="fil3">Brumm</div>
-          <div class="item" data-category="fil3">Blue Child Joni</div>
-          <div class="item" data-category="fil1">Charm Lover Salubra</div>
-          <div class="item" data-category="fil3">Cloth</div>
-          <div class="item" data-category="fil1">Confessor Jiji</div>
-          <div class="item" data-category="fil1">Cornifer</div>
-          <div class="item" data-category="fil1">Divine</div>
-          <div class="item" data-category="fil3">Elderbug</div>
-          <div class="item" data-category="fil3">Fluke Hermit</div>
-          <div class="item" data-category="fil2">Godseeker</div>
-          <div class="item" data-category="fil2">Grey Mourner</div>
-          <div class="item" data-category="fil1">Grubfather</div>
-          <div class="item" data-category="fil3">Herrah the Beast</div>
-          <div class="item" data-category="fil3">Hive Queen Vespa</div>
-          <div class="item" data-category="fil3">Hornet</div>
-          <div class="item" data-category="fil2">the Hunter</div>
-          <div class="item" data-category="fil1">Iselda</div>
-          <div class="item" data-category="fil3">Last Stag</div>
-          <div class="item" data-category="fil1">Leg Eater</div>
-          <div class="item" data-category="fil1">Little Fool</div>
-          <div class="item" data-category="fil3">Lurien</div>
-          <div class="item" data-category="fil3">Marissa</div>
-          <div class="item" data-category="fil3">Mask Maker</div>
-          <div class="item" data-category="fil3">Midwife</div>
-          <div class="item" data-category="fil3">Millibelle</div>
-          <div class="item" data-category="fil3">Mister Mushroom</div>
-          <div class="item" data-category="fil3">Monomon the Teacher</div>
-          <div class="item" data-category="fil3">Moss Prophet</div>
-          <div class="item" data-category="fil3">Myla</div>
-          <div class="item" data-category="fil3">Nailmaster Mato</div>
-          <div class="item" data-category="fil3">Nailmaster Oro</div>
-          <div class="item" data-category="fil3">Nailmaster Sheo</div>
-          <div class="item" data-category="fil1">Nailsmith</div>
-          <div class="item" data-category="fil3">Nymm</div>
-          <div class="item" data-category="fil3">Pale King</div>
-          <div class="item" data-category="fil3">Quirrel</div>
-          <div class="item" data-category="fil1">Relic Seeker Lemm</div>
-          <div class="item" data-category="fil3">Revek</div>
+          <div class="item" data-category="fil3"><a href="#bardoon">Bardoon</a></div>
+          <div class="item" data-category="fil3"><a href="#brett">Bretta</a></div>
+          <div class="item" data-category="fil3"><a href="#brum">Brumm</a></div>
+          <div class="item" data-category="fil3"><a href="#jjonii">Blue Child Joni</a></div>
+          <div class="item" data-category="fil1"><a href="#salubra">Charm Lover Salubra</a></div>
+          <div class="item" data-category="fil3"><a href="#cloth">Cloth</a></div>
+          <div class="item" data-category="fil1"><a href="#jiji">Confessor Jiji</a></div>
+          <div class="item" data-category="fil1"><a href="#cornifer">Cornifer</a></div>
+          <div class="item" data-category="fil1"><a href="#divine">Divine</a></div>
+          <div class="item" data-category="fil3"><a href="#elderbug">Elderbug</a></div>
+          <div class="item" data-category="fil3"><a href="#flukehermit">Fluke Hermit</a></div>
+          <div class="item" data-category="fil2"><a href="#godseeker">Godseeker</a></div>
+          <div class="item" data-category="fil2"><a href="#greymourner">Grey Mourner</a></div>
+          <div class="item" data-category="fil1"><a href="#grubfather">Grubfather</a></div>
+          <div class="item" data-category="fil3"><a href="#herrah">Herrah the Beast</a></div>
+          <div class="item" data-category="fil3"><a href="#dreamers">Dreamers</a></div>
+          <div class="item" data-category="fil3"><a href="#vespa">Hive Queen Vespa</a></div>
+          <div class="item" data-category="fil3"><a href="#hornet">Hornet</a></div>
+          <div class="item" data-category="fil2"><a href="#hunter">the Hunter</a></div>
+          <div class="item" data-category="fil1"><a href="#iselda">Iselda</a></div>
+          <div class="item" data-category="fil3"><a href="#laststag">Last Stag</a></div>
+          <div class="item" data-category="fil1"><a href="#legeater">Leg Eater</a></div>
+          <div class="item" data-category="fil1"><a href="#littlefool">Little Fool</a></div>
+          <div class="item" data-category="fil3"><a href="#lurien">Lurien</a></div>
+          <div class="item" data-category="fil3"><a href="#marissa">Marissa</a></div>
+          <div class="item" data-category="fil3"><a href="#maskmaker">Mask Maker</a></div>
+          <div class="item" data-category="fil3"><a href="#midwife">Midwife</a></div>
+          <div class="item" data-category="fil3"><a href="#millibelle">Millibelle</a></div>
+          <div class="item" data-category="fil3"><a href="#mistermushroom">Mister Mushroom</a></div>
+          <div class="item" data-category="fil3"><a href="#monomon">Monomon the Teacher</a></div>
+          <div class="item" data-category="fil3"><a href="#mossprophet">Moss Prophet</a></div>
+          <div class="item" data-category="fil3"><a href="#myla">Myla</a></div>
+          <div class="item" data-category="fil3"><a href="#mato">Nailmaster Mato</a></div>
+          <div class="item" data-category="fil3"><a href="#oro">Nailmaster Oro</a></div>
+          <div class="item" data-category="fil3"><a href="#sheo">Nailmaster Sheo</a></div>
+          <div class="item" data-category="fil1"><a href="#nailsmith">Nailsmith</a></div>
+          <div class="item" data-category="fil3"><a href="#nymm">Nymm</a></div>
+          <div class="item" data-category="fil3"><a href="#paleking">Pale King</a></div>
+          <div class="item" data-category="fil3"><a href="#quirrel">Quirrel</a></div>
+          <div class="item" data-category="fil1"><a href="#lemm">Relic Seeker Lemm</a></div>
+          <div class="item" data-category="fil3"><a href="#revek">Revek</a></div>
+          <div class="item" data-category="fil3"><a href="#emilitia">Eternal Emilitia</a></div>
         </div>
 
-        <script src="javascriptyummy.js"></script>
       </section>
 
     <div class="troublshoetingIB">
-    <section class="INFOBOX">
+    <section class="INFOBOX" id="bardoon">
       <img src="../assets/Bardoon.webp" alt="knight" class="infoboximg">
       <div style="text-align: center;">
         <h2 class="name">BARDOON</h2>
@@ -105,6 +112,7 @@
       </div>
 
       <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
         <li>NPC</li>
         <li>Lore on Infection & Pale King's Origins</li>
       </ul>
@@ -116,7 +124,7 @@
       </p>
     </section>
 
-    <section class="INFOBOX">
+    <section class="INFOBOX" id="brett">
       <img src="../assets/Bretta.webp" alt="knight" class="infoboximg">
       <div style="text-align: center;">
         <h2 class="name">BRETTA</h2>
@@ -124,6 +132,7 @@
       </div>
 
       <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
         <li>NPC | Quest </li>
         <li>Saviour-searching beetle</li>
       </ul>
@@ -135,7 +144,7 @@
       </p>
     </section>
 
-    <section class="INFOBOX">
+    <section class="INFOBOX" id="brum">
       <img src="../assets/Brumm.webp" alt="knight" class="infoboximg">
       <div style="text-align: center;">
         <h2 class="name">BRUMM</h2>
@@ -143,6 +152,7 @@
       </div>
 
       <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
         <li>NPC | Special Event!</li>
         <li>Destroys Nightmare Lantern</li>
       </ul>
@@ -156,7 +166,7 @@
 
   <div class="troublshoetingIB">
 
-    <section class="INFOBOX">
+    <section class="INFOBOX" id="jjonii">
       <img src="../assets/Joni.png" alt="knight" class="infoboximg">
       <div style="text-align: center;">
         <h2 class="name">BLUE CHILD JONI</h2>
@@ -164,6 +174,7 @@
       </div>
 
       <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
         <li>"The Kindly Heretic"</li>
         <li>Joni's Blessing</li>
       </ul>
@@ -174,7 +185,7 @@
       </p>
     </section>
 
-        <section class="INFOBOX">
+        <section class="INFOBOX" id="salubra">
       <img src="../assets/Salubra.png" alt="knight" class="infoboximg">
       <div style="text-align: center;">
         <h2 class="name">CHARM LOVER </br> SALUBRA</h2>
@@ -182,6 +193,7 @@
       </div>
 
       <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
         <li>Merchant </li>
         <li>Charm Collector</li>
       </ul>
@@ -192,7 +204,7 @@
       </p>
     </section>
 
-    <section class="INFOBOX">
+    <section class="INFOBOX" id="cloth">
       <img src="../assets/Cloth.png" alt="knight" class="infoboximg">
       <div style="text-align: center;">
         <h2 class="name">CLOTH</h2>
@@ -200,6 +212,7 @@
       </div>
 
       <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
         <li>Cicada Warrior</li>
         <li>Quest of Strength</li>
       </ul>
@@ -216,7 +229,7 @@
   </div>
 
     <div class="troublshoetingIB">
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="jiji">
         <img src="../assets/Confessor Jiji.png" alt="knight" class="infoboximg">
         <div style="text-align: center;">
           <h2 class="name">CONFESSOR <br/> JIJI</h2>
@@ -224,6 +237,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Merchant</li>
           <li>Recovers Shades</li>
         </ul> 
@@ -235,7 +249,7 @@
         </p>
       </section>
 
-          <section class="INFOBOX">
+          <section class="INFOBOX" id="cornifer">
         <img src="../assets/Cornifer.png" alt="knight" class="infoboximg">
         <div style="text-align: center;">
           <h2 class="name">CORNIFER</h2>
@@ -243,6 +257,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Merchant </li>
           <li>Cartographer</li>
         </ul>
@@ -254,7 +269,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="divine">
         <img src="../assets/Divine.png" alt="knight" class="infoboximg">
         <div style="text-align: center;">
           <h2 class="name">DIVINE</h2>
@@ -262,6 +277,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Merchant</li>
           <li>Unbreakable Charm maker</li>
         </ul>
@@ -278,7 +294,7 @@
     </div>
 
     <div class="troublshoetingIB">
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="dreamers">
         <img src="../assets/Dreamers.png" alt="knight" class="infoboximg">
         <div style="text-align: center;">
           <h2 class="name">DREAMERS</h2>
@@ -286,6 +302,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Monomon, Lurien, & Herrah</li>
           <li>The eternal sleepers</li>
         </ul> 
@@ -297,7 +314,7 @@
         </p>
       </section>
 
-          <section class="INFOBOX">
+          <section class="INFOBOX" id="elderbug">
         <img src="../assets/Elderbug.png" alt="knight" class="infoboximg" style="width: 5rem">
         <div style="text-align: center;">
           <h2 class="name">ELDERBUG</h2>
@@ -305,6 +322,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Last Dirtmouth resident</li>
           <li>Wise but pessimistic bug</li>
         </ul>
@@ -317,7 +335,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="emilitia">
         <img src="../assets/Eternal Emilitia.png" alt="knight" class="infoboximg" style="width: 5rem">
         <div style="text-align: center;">
           <h2 class="name">ETERNAL EMILITIA</h2>
@@ -325,6 +343,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Hidden room!</li>
           <li>Shortcut</li>
         </ul>
@@ -339,7 +358,7 @@
     </div>
 
     <div class="troublshoetingIB">
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="flukehermit">
         <img src="../assets/Fluke Hermit.png" alt="knight" class="infoboximg" style="width: 5rem">
         <div style="text-align: center;">
           <h2 class="name">FLUKE HERMIT</h2>
@@ -347,6 +366,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Fluke lore</li>
           <li>Hidden room!</li>
         </ul> 
@@ -357,7 +377,7 @@
         </p>
       </section>
 
-          <section class="INFOBOX">
+          <section class="INFOBOX" id="godseeker">
         <img src="../assets/Godseeker.png" alt="knight" class="infoboximg">
         <div style="text-align: center;">
           <h2 class="name">GODSEEKER</h2>
@@ -365,6 +385,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Pantheon</li>
           <li>Quest Giver</li>
         </ul>
@@ -376,7 +397,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="greymourner">
         <img src="../assets/Grey Mourner.png" alt="knight" class="infoboximg" style="width: 7rem">
         <div style="text-align: center;">
           <h2 class="name">GREY </br> MOURNER</h2>
@@ -384,6 +405,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Five Great Knights</li>
           <li>Quest giver</li>
         </ul>
@@ -397,7 +419,7 @@
     </div>
 
     <div class="troublshoetingIB">
-      <section class="INFOBOX">
+      <section class="INFOBOX"  id="grubfather">
         <img src="../assets/Grubfather.png" alt="knight" class="infoboximg" style="width: 5rem">
         <div style="text-align: center;">
           <h2 class="name">GRUBFATHER</h2>
@@ -405,6 +427,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Merchant (?)</li>
           <li>Save the grubs!</li>
         </ul> 
@@ -416,7 +439,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="herrah">
         <img src="../assets/Herrah.png" alt="knight" class="infoboximg" style="width: 3rem;">
         <div style="text-align: center;">
           <h2 class="name">HERRAH </br> THE BEAST</h2>
@@ -424,6 +447,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Weaver</li>
           <li>Queen of the Spider Tribe</li>
         </ul>
@@ -436,7 +460,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX"  id="vespa">
         <img src="../assets/Vespa.png" alt="knight" class="infoboximg" style="width: 3rem">
         <div style="text-align: center;">
           <h2 class="name">HIVE QUEEN </br> VESPA</h2>
@@ -444,6 +468,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Hive Lore</li>
           <li>Hornet's Mentor</li>
         </ul>
@@ -458,7 +483,7 @@
     </div>
 
     <div class="troublshoetingIB">
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="hornet">
         <img src="../assets/Hornet.png" alt="knight" class="infoboximg" style="width: 7rem">
         <div style="text-align: center;">
           <h2 class="name">HORNET</h2>
@@ -466,6 +491,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Impt. Character!</li>
           <li>Princess Portector of Hallownest</li>
         </ul> 
@@ -479,7 +505,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="hunter">
         <img src="../assets/Hunter.png" alt="knight" class="infoboximg">
         <div style="text-align: center;">
           <h2 class="name">THE HUNTER</h2>
@@ -487,6 +513,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Quest NPC</li>
           <li>The Hunt</li>
         </ul>
@@ -499,7 +526,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="iselda">
         <img src="../assets/Iselda.png" alt="knight" class="infoboximg">
         <div style="text-align: center;">
           <h2 class="name">ISELDA</h2>
@@ -507,6 +534,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Map Merchant</li>
           <li>Cornifer's Wife</li>
         </ul>
@@ -520,7 +548,7 @@
     </div>
 
     <div class="troublshoetingIB">
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="laststag">
         <img src="../assets/Last stag.png" alt="knight" class="infoboximg" style="width: 7rem">
         <div style="text-align: center;">
           <h2 class="name">LAST STAG</h2>
@@ -528,6 +556,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Backbone of Hallownest's Transport</li>
           <li>Hallownest / Stag Lore</li>
         </ul> 
@@ -542,7 +571,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="legeater">
         <img src="../assets/Legeater.png" alt="knight" class="infoboximg" style="width: 5rem;">
         <div style="text-align: center;">
           <h2 class="name">LEG EATER</h2>
@@ -550,6 +579,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Merchant</li>
           <li>Fragile Charms</li>
         </ul>
@@ -563,7 +593,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="littlefool">
         <img src="../assets/Little_Fool.png" alt="knight" class="infoboximg" style="width: 3rem;">
         <div style="text-align: center;">
           <h2 class="name">LITTLE </br> FOOL</h2>
@@ -571,6 +601,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Merchant</li>
           <li>Is in quite the predicament</li>
         </ul>
@@ -583,7 +614,7 @@
     </div>
 
     <div class="troublshoetingIB">
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="lurien">
         <img src="../assets/Lurien.png" alt="knight" class="infoboximg" style="width: 4rem">
         <div style="text-align: center;">
           <h2 class="name">LURIEN</h2>
@@ -591,6 +622,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Lurien the Watcher</li>
           <li>The Most Loyal Subject</li>
         </ul> 
@@ -604,7 +636,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="marissa">
         <img src="../assets/Marissa.png" alt="knight" class="infoboximg" style="width: 5rem;">
         <div style="text-align: center;">
           <h2 class="name">MARISSA</h2>
@@ -612,6 +644,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Renowed Songstress</li>
         </ul>
 
@@ -623,7 +656,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="maskmaker">
         <img src="../assets/MaskMaker.png" alt="knight" class="infoboximg" style="width: 7rem;">
         <div style="text-align: center;">
           <h2 class="name">MASK MAKER</h2>
@@ -631,6 +664,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Lore on Hallownest</li>
           <li>Lore on Masks</li>
         </ul>
@@ -647,7 +681,7 @@
     </div>
 
     <div class="troublshoetingIB">
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="midwife">
         <img src="../assets/Midwife.png" alt="knight" class="infoboximg">
         <div style="text-align: center;">
           <h2 class="name">MIDWIFE</h2>
@@ -655,6 +689,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Very very hungry</li>
           <li>Lore on Herrah and Hornet</li>
         </ul> 
@@ -667,7 +702,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="millibelle">
         <img src="../assets/Millibelle.png" alt="knight" class="infoboximg" style="width: 6rem;">
         <div style="text-align: center;">
           <h2 class="name">MILLIBELLE</h2>
@@ -675,6 +710,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Merchant</li>
           <li>Banker</li>
         </ul>
@@ -688,7 +724,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="mistermushroom">
         <img src="../assets/Mister_Mushroom.png" alt="knight" class="infoboximg" style="width: 5rem;">
         <div style="text-align: center;">
           <h2 class="name">MISTER </br> MUSHROOM</h2>
@@ -696,8 +732,10 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Talks in Shroomish</li>
           <li>Also known as the Herald</li>
+          
         </ul>
 
         <p class="infoboxp">Mister Mushroom talks in incomprehensible Shroomish unless you have the Spore Shroom
@@ -710,7 +748,7 @@
     </div>
 
     <div class="troublshoetingIB">
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="monomon">
         <img src="../assets/Monomon.png" alt="knight" class="infoboximg" style="width: 5rem;">
         <div style="text-align: center;">
           <h2 class="name">MONOMON</h2>
@@ -718,6 +756,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Dreamer</li>
           <li>Chief Researcher of Hallownest</li>
         </ul> 
@@ -731,7 +770,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="mossprophet">
         <img src="../assets/Moss_Prophet.png" alt="knight" class="infoboximg">
         <div style="text-align: center;">
           <h2 class="name">MOSS </br> PROPHET</h2>
@@ -739,6 +778,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Infected</li>
           <li>Radience Lore</li>
         </ul>
@@ -752,7 +792,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="myla">
         <img src="../assets/Myla.png" alt="knight" class="infoboximg" style="width: 7rem;">
         <div style="text-align: center;">
           <h2 class="name">MYLA</h2>
@@ -760,6 +800,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Miner</li>
           <li>Happy lil singer</li>
         </ul>
@@ -776,7 +817,7 @@
     </div>
 
     <div class="troublshoetingIB">
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="mato">
         <img src="../assets/Mato.png" alt="knight" class="infoboximg" style="width: 8rem;">
         <div style="text-align: center;">
           <h2 class="name">NAILMASTER </br> MATO</h2>
@@ -784,6 +825,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Signature: Cyclone Slash</li>
           <li>Mentorly guy</li>
         </ul> 
@@ -796,7 +838,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="oro">
         <img src="../assets/Oro.png" alt="knight" class="infoboximg">
         <div style="text-align: center;">
           <h2 class="name">NAILMASTER </br> ORO</h2>
@@ -804,6 +846,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Signature Move: Dash Slash</li>
           <li>Indebted to Mato</li>
         </ul>
@@ -817,7 +860,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="sheo">
         <img src="../assets/NailmasterSheo.png" alt="knight" class="infoboximg" style="width: 8rem;">
         <div style="text-align: center;">
           <h2 class="name">NAILMASTER </br> SHEO</h2>
@@ -825,6 +868,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Signature move: Great Slash</li>
           <li>The prodigy</li>
         </ul>
@@ -840,7 +884,7 @@
     </div>
 
     <div class="troublshoetingIB">
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="nailsmith">
         <img src="../assets/Nailsmith.png" alt="knight" class="infoboximg" style="width: 7rem;">
         <div style="text-align: center;">
           <h2 class="name">NAIL SMITH</h2>
@@ -848,6 +892,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Merchant</li>
           <li>The Pure Nail</li>
         </ul> 
@@ -862,7 +907,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="nymm">
         <img src="../assets/Nymm.png" alt="knight" class="infoboximg">
         <div style="text-align: center;">
           <h2 class="name">NYMM</h2>
@@ -870,6 +915,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Brumm (?)</li>
           <li>Carefree Melody</li>
         </ul>
@@ -881,7 +927,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="paleking">
         <img src="../assets/Pale-King.png" alt="knight" class="infoboximg" style="width: 7rem;">
         <div style="text-align: center;">
           <h2 class="name">PALE KING</h2>
@@ -889,6 +935,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Impt. Character!</li>
           <li>The ruler of Hallownest</li>
         </ul>
@@ -905,7 +952,7 @@
     </div>
 
     <div class="troublshoetingIB">
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="quirrel">
         <img src="../assets/Quirrel.png" alt="knight" class="infoboximg" style="width: 7rem;">
         <div style="text-align: center;">
           <h2 class="name">QUIRREL</h2>
@@ -913,6 +960,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+          <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Monomon's Assistant & Apprentice</li>
           <li>Skilled with the Nail</li>
         </ul> 
@@ -927,7 +975,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="lemm">
         <img src="../assets/Lemm.png" alt="knight" class="infoboximg" style="width: 8rem">
         <div style="text-align: center;">
           <h2 class="name">RELIC </br> SEEKER </br> LEMM</h2>
@@ -935,6 +983,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Merchant</li>
           <li>Hallownest Lore</li>
         </ul>
@@ -947,7 +996,7 @@
         </p>
       </section>
 
-      <section class="INFOBOX">
+      <section class="INFOBOX" id="revek">
         <img src="../assets/Revek.png" alt="knight" class="infoboximg" style="width: 8rem;">
         <div style="text-align: center;">
           <h2 class="name">REVEK</h2>
@@ -955,6 +1004,7 @@
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
+        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
           <li>Protector</li>
           <li>Spirit</li>
         </ul>
@@ -968,6 +1018,7 @@
         </p>
       </section>
     </div>
+        <script src="javascriptyummy.js"></script>
 
     <footer>
         <p>© 2025 L. Cabrera & H. Comia, 9-Beryllium. </p> <br>

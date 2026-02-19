@@ -158,7 +158,7 @@
 
   </style>
 </head>
-<body>
+<body onhashchange="changeBorder3()">
   <section class="header">
     <div class="floatingicon">
       <img src="../assets/knight.png" alt="knight" class="linkicon">
@@ -231,34 +231,40 @@
     </section>
   </section>
 
-    <section class="filters">
+    <section class="filters" id="filterz">
       <h2 style="margin-bottom: 1rem; color:#e2a9f1; font-size: 2.8rem;">Boss Index Filters (based on boss difficulty)</h2>
+    <p style="text-align: center; margin-bottom: 1.3rem; font-size: 1.4rem; color:#cb6ce6;">Use the filter buttons below to filter out different bosses based on their 
+      difficulty! 
+      <br><br><b style="color:rgb(255, 255, 255);">Easy Difficulty</b> are bosses that are generally easier to defeat and 
+      usually encountered by the player earlier on in the game.
+      <br><b style="color:rgb(255, 255, 255);">Medium Difficulty</b> bosses are more challenging than Easy Difficulty bosses, and often require more
+      experience and skill from the player to defeat. These types of bosses are usually encountered in the mid-late game.
+      <br><b style="color:rgb(255, 255, 255);">Hard Difficulty</b> bosses are the most difficult to defeat and are usually encountered in the late game.
+      They often require a very high level of skill and experience and many trials to master.
+    </p>
       <div class="filterbtns">
         <button data-category="All" class="active">All</button>
-        <button data-category="fil1">Easy Difficulty</button>
-        <button data-category="fil2">Medium Difficulty</button>
-        <button data-category="fil3">Hard Difficulty</button>
+        <button data-category="fil1" style="color:rgb(21, 121, 34);">Easy Difficulty</button>
+        <button data-category="fil2" style="color:rgb(156, 70, 0);">Medium Difficulty</button>
+        <button data-category="fil3" style="color:rgb(255, 0, 0);">Hard Difficulty</button>
       </div>
 
       <div class="charset">
-        <div class="item" data-category="fil1">Character 1 (Easy Difficulty)</div>
-        <div class="item" data-category="fil1">Character 2 (Easy Difficulty)</div>
-        <div class="item" data-category="fil1">Character 3 (Easy Difficulty)</div>
-        <div class="item" data-category="fil2">Character 1 (Medium Difficulty)</div>
-        <div class="item" data-category="fil2">Character 2 (Medium Difficulty)</div>
-        <div class="item" data-category="fil2">Character 3 (Medium Difficulty)</div>
-        <div class="item" data-category="fil3">Character 1 (Hard Difficulty)</div>
-        <div class="item" data-category="fil3">Character 2 (Hard Difficulty)</div>
-        <div class="item" data-category="fil3">Character 3 (Hard Difficulty)</div>
+        <div class="item" data-category="fil2"><a href="#brokenvessel">Broken Vessel</a></div>
+        <div class="item" data-category="fil1"><a href="#broodingmawlek">Brooding Mawlek</a></div>
+        <div class="item" data-category="fil2"><a href="#brothersoro">Brothers Oro & Mato</a></div>
+        <div class="item" data-category="fil3"><a href="#crystalguardian">Crystal Guardian</a></div>
+        <div class="item" data-category="fil3"><a href="#dungdefender">Dung Defender</a></div>
+        <div class="item" data-category="fil1"><a href="#falseknight">False Knight</a></div>
       </div>
 
-      <script src="javascriptyummy.js"></script>
+
       
     </section>    
 
   <div class="fixing">
   <section class="centering">
-    <div class="bossinfo">
+    <div class="bossinfo"  id="brokenvessel">
       <div class="fixing">
         <h1 style="font-size: 350%;">BROKEN VESSEL</h1>
         <h3 style="font-size: 150%; margin-right: -2rem; margin-left: -2rem; padding-top:1rem; border-top: #e2a9f1 solid 5px;">ANCIENT BASIN</h3>
@@ -274,6 +280,8 @@
           Recommended Charms: Quick Focus, Mark of Pride/Longnail (extend reach), Spore Shroom/Defender's Crest (remove Infected Balloon)<br>
           Recommended Spells/Other: Vengeful Spirit/Shade Soul Spell (knock-back effect), Desolate Dive/Descending Dark Spell (>damage), 
           Cyclone Smash (stagger + corner)
+
+          <br><br><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a>
         </p>
     </div>
   </div>
@@ -285,7 +293,7 @@
 
   <div class="fixing">
     <section class="centering">
-      <div class="bossinfo" style="height: 15rem;">
+      <div class="bossinfo" style="height: 15rem;" id="broodingmawlek">
         <div class="fixing">
           <h1 style="font-size: 325%;">BROODING MAWLEK</h1>
           <h3 style="font-size: 150%; margin-right: -2rem; margin-left: -2rem; padding-top:0.7rem; border-top: #e2a9f1 solid 5px;">FORGOTTEN CROSSROADS</h3>
@@ -296,6 +304,7 @@
             Recommended Charms: Baldur Shell (Healing), Sharp Shadow (Damage)<br>
             Recommended Spells/Other: Cyclone Slash (Light damage to chip away health), Mark of Pride (deal damage while
             Mawlek is attacking), & Longnail
+            <br><br><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a>
           </p>
       </div>
     </div>
@@ -307,7 +316,7 @@
 
   <div class="fixing">
     <section class="centering">
-      <div class="bossinfo">
+      <div class="bossinfo"  id="brothersoro">
         <div class="fixing">
           <h1 style="font-size: 350%;">BROTHERS ORO & MATO</h1>
           <h3 style="font-size: 150%; margin-right: -2rem; margin-left: -2rem; padding-top:1rem; border-top: #e2a9f1 solid 5px;">GODHOME</h3>
@@ -320,6 +329,8 @@
             Recommended Charms: Shape of Unn & Quick Focus (safe healing), Shade Cloak & Sharp Shadow (defense against Double Slash)<br>
             Recommended Spells/Other: Howling Wraiths/Abyss Shriek (hitting during Jump Slash), Vengeful Spirit/Shade Soul (mobility, attack),
             Desolate Dive/Descending Dark (response to attack, esp Jump Slash)
+
+            <br><br><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a>
           </p>
         </div>
     </div>
@@ -331,7 +342,7 @@
 
     <div class="fixing">
     <section class="centering">
-      <div class="bossinfo">
+      <div class="bossinfo" id="crystalguardian">
         <div class="fixing">
           <h1 style="font-size: 350%;">CRYSTAL GUARDIAN</h1>
           <h3 style="font-size: 150%; margin-right: -2rem; margin-left: -2rem; padding-top:1rem; border-top: #e2a9f1 solid 5px;">CRYSTAL PEAK</h3>
@@ -348,6 +359,8 @@
             Recommended Charms: None<br>
             Recommended Spells/Other: Desolate Dive/Descending Dark & Vengeful Spirit/Shade Soul (for safe damage),
             Howling Wraiths/Abyss Shriek (more damage but riskier)
+
+            <br><br><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a>
           </p>
         </div>
     </div>
@@ -359,7 +372,7 @@
 
     <div class="fixing">
     <section class="centering">
-      <div class="bossinfo" style="height: 15rem;">
+      <div class="bossinfo" style="height: 15rem;" id="dungdefender">
         <div class="fixing">
           <h1 style="font-size: 350%;">DUNG DEFENDER</h1>
           <h3 style="font-size: 150%; margin-right: -2rem; margin-left: -2rem; padding-top:1rem; border-top: #e2a9f1 solid 5px;">ROYAL WATERWAYS</h3>
@@ -373,6 +386,8 @@
 
             Recommended Charms: None<br>
             Recommended Spells/Other: Desolate Dive/Descending Dark (hit during burrowing for stagger effect)
+
+            <br><br><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a>
           </p>
         </div>
     </div>
@@ -384,7 +399,7 @@
 
     <div class="fixing">
     <section class="centering">
-      <div class="bossinfo" style="height: 15rem;">
+      <div class="bossinfo" style="height: 15rem;" id="falseknight">
         <div class="fixing">
           <h1 style="font-size: 350%;">FALSE KNIGHT</h1>
           <h3 style="font-size: 150%; margin-right: -2rem; margin-left: -2rem; padding-top:1rem; border-top: #e2a9f1 solid 5px;">CRYSTAL PEAK</h3>
@@ -399,6 +414,8 @@
 
             Recommended Charms: None<br>
             Recommended Spells/Other: Grubsong (for SOUL, as attacking the armor doesn't regen SOUL)
+
+            <br><br><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a>
           </p>
         </div>
       </div>
@@ -407,7 +424,7 @@
         <img src="../assets/False_Knight.png" alt="knight" style="width:95%; margin-top: 3rem; margin-left: 0.5rem;">
       </div>
     </section>
-
+      <script src="javascriptyummy.js"></script>
   <footer style="margin-top:10rem;">
       <p>© 2025 L. Cabrera & H. Comia, 9-Beryllium. </p> <br>
       <p>Note: All of the information and images presented in this website are derived from the game, Hollow Knight (2017) by Team Cherry. </p> <br>

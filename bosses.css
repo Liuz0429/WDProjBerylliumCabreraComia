@@ -73,6 +73,21 @@ footer {
     background-color:#e2a9f1;
 }
 
+.charset a {
+    color: black
+}
+
+.charset a:hover {
+    color: #cb6ce6;
+}
+
+.charset div {
+    background-color: #e2a9f1;
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    border: none;
+}
+
 .charset {
     display: flex;
     flex-wrap: wrap;

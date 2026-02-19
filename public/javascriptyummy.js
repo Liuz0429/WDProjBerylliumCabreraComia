@@ -26,13 +26,46 @@ function changeBorder() {
         document.getElementById('ffallen'), document.getElementById('tagony'), document.getElementById('bshell'), document.getElementById('fnest'), document.getElementById('dcrest'), 
         document.getElementById('gwom'), document.getElementById('qfoc'), document.getElementById('dfoc'), document.getElementById('lheart'), document.getElementById('lcore'), 
         document.getElementById('jbless'), document.getElementById('hblood'), document.getElementById('sshroom'), document.getElementById('sshadow'), document.getElementById('sunn'),
-        document.getElementById('nglory'), document.getElementById('wsong')]; 
+        document.getElementById('nglory')]; 
     let hash = document.getElementById(location.hash.substring(1));
     for (let i = 0; i < bah.length; i++) {
         if (bah[i] !== hash) {
             bah[i].style.border = 'none';
         } else {
             bah[i].style.border = '5px solid #e2a9f1';
+        }
+    } 
+}
+
+function changeBorder2() {
+    const fahjin = [document.getElementById('bardoon'), document.getElementById('brett'), document.getElementById('brum'),
+        document.getElementById('jjonii'), document.getElementById('salubra'), document.getElementById('cloth'), document.getElementById('jiji'), document.getElementById('cornifer'),
+        document.getElementById('divine'), document.getElementById('elderbug'), document.getElementById('flukehermit'), document.getElementById('godseeker'),
+        document.getElementById('greymourner'), document.getElementById('grubfather'), document.getElementById('herrah'), document.getElementById('dreamers'), document.getElementById('vespa'), document.getElementById('hornet'),
+        document.getElementById('hunter'), document.getElementById('iselda'), document.getElementById('laststag'), document.getElementById('legeater'), document.getElementById('littlefool'), document.getElementById('monomon'),
+        document.getElementById('mossprophet'), document.getElementById('myla'), document.getElementById('mato'), document.getElementById('oro'), document.getElementById('sheo'),
+        document.getElementById('nailsmith'), document.getElementById('nymm'), document.getElementById('paleking'), document.getElementById('quirrel'), document.getElementById('lemm'),
+        document.getElementById('revek'), document.getElementById('emilitia'), document.getElementById('lurien'), document.getElementById('marissa'), document.getElementById('maskmaker'),
+        document.getElementById('midwife'), document.getElementById('millibelle'), document.getElementById('mistermushroom')]; 
+    let crash = document.getElementById(location.hash.substring(1));
+    for (let i = 0; i < fahjin.length; i++) {
+        if (fahjin[i] !== crash) {
+            fahjin[i].style.border = 'none';
+        } else {
+            fahjin[i].style.border = '5px solid #e2a9f1';
+        }
+    } 
+}
+
+function changeBorder3() {
+    const boss = [document.getElementById('brokenvessel'), document.getElementById('broodingmawlek'), document.getElementById('brothersoro'), 
+        document.getElementById('crystalguardian'), document.getElementById('dungdefender'), document.getElementById('falseknight')]; 
+    let brash = document.getElementById(location.hash.substring(1));
+    for (let i = 0; i < boss.length; i++) {
+        if (boss[i] !== brash) {
+            boss[i].style.border = 'none';
+        } else {
+            boss[i].style.border = '5px solid #e2a9f1';
         }
     } 
 }
