@@ -193,13 +193,6 @@ ul {
       animation-range: entry 10%;
     }
 
-    .fixing {
-      color:#cb6ce6;
-      display: block;
-      margin-left: 10%;
-      font-size: 1.5rem;
-    }
-
     .name {
       color: #e2a9f1;
       font-size: 2rem;
@@ -338,6 +331,10 @@ h1 {
     display: flex;
     width: 100%;
     margin: auto;
+          color:#cb6ce6;
+      display: block;
+      margin-left: 10%;
+      font-size: 1.5rem;
 }
 
 .fixingpt2 {
