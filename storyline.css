@@ -70,3 +70,165 @@ footer {
     margin-top: 4rem;
     color: #e2a9f1;
 }
+
+    div {
+      display: inline-block;
+      justify-content: center;
+    }
+
+    .infobox {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 48, 88, 0.82);
+        width: 48rem;
+        height: 13rem;
+        float: right; 
+        margin-top: 1rem;
+    }
+    .infobox-left {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 48, 88, 0.82);
+        width: 60vw;
+        height: 40vh;
+        float: right; 
+        margin-top: 1rem;
+        margin-left: 8rem;
+    }
+
+    .infobox-left1 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 48, 88, 0.82);
+        width: 48rem;
+        height: 20rem;
+        float: right; 
+        margin-top: 1rem;
+        margin-left: 8rem;
+    }
+
+    .sidebox {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: rgb(51, 48, 88, 0.82);
+      color: #e2a9f1;
+      width: 16rem;
+      height: 13rem;
+      float: left;
+      margin-top: 1rem;
+      margin-left: 8rem;
+      margin-right: 1rem;
+    }
+
+    .sidebox-right {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: rgb(51, 48, 88, 0.82);
+      color: #e2a9f1;
+      width: 16rem;
+      height: 22rem;
+      float: right;
+      margin-top: 1rem;
+      margin-left: 1rem;  
+      margin-right: 1rem;
+    }
+
+    .sidebox-right1 {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: rgb(51, 48, 88, 0.82);
+      color: #e2a9f1;
+      width: 16rem;
+      height: 20rem;
+      float: right;
+      margin-top: 1rem;
+      margin-left: 1rem;  
+      margin-right: 1rem;
+    }
+
+    section > h3 {
+      color: #cb6ce6;
+      font-size: 2.5rem;
+      text-align: center;
+      display: inline;
+    }
+
+    .overview {
+        background-color: rgb(51, 48, 88, 0.82);
+        width: 30rem;
+        height: 18rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 20rem;
+        padding-left: 3rem;
+        padding-top: 2rem;
+    }
+
+    .linkicon {
+      display: block;
+      float: left;
+      margin-right: 6.5rem;
+      width: 2rem;
+      height: 2rem;
+      background-color: #cb6ce6;
+      padding: 0.25rem;
+    }
+
+    .centering {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hallowseal {
+      position: absolute;
+      margin-top:1rem;
+      max-width: 25rem;
+      height: auto;
+      margin-left: -30rem;
+    }
+
+    .heading {
+      display: inline-block;
+    }
+
+    .floatingicon {
+      flex: 1;
+    }
+
+    .voidIdol {
+      width: 100%;
+      height: auto;
+      margin-left: 3rem;
+      margin-top: -3rem;
+    }
+
+    .paleking {
+      width: 80%;
+      height: auto;
+      margin-top: -2rem;
+    }
+
+    .centeringheader {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
+
+    ol {
+      color:#e2a9f1;
+      margin-left: 3rem;
+    }

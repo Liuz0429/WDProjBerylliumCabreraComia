@@ -131,6 +131,12 @@ h1 {
     justify-content: center;
 }
 
+    li {
+      font-size: 1.2rem;
+      margin-left: 2rem;
+      margin-top: -0.1rem;
+    }
+
 .filterz {
     display: flex;
     align-items: center;

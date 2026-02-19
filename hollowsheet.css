@@ -64,3 +64,57 @@ section.infobox-right:hover {
     width: 47vw;
     height: 22vh;
 }
+
+    section.title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(51, 48, 88, 0.82);
+      width:60rem;
+      height: 25rem;
+      margin: auto;
+    }
+
+    .centeringtitletext
+    {
+      color:#e2a9f1;
+      font-size: 11.8rem;
+      display: block;
+    }
+
+    section.infobox {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(51, 48, 88, 0.82);
+      width: 45vw;
+      height: 20vh;
+      margin-left: 2.1875rem;
+      transition: width 2s, height 2s;
+    }
+
+    section.infobox-right {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(51, 48, 88, 0.82);
+      width: 45vw;
+      height: 20vh;
+      margin-top: 2.25rem;
+      margin-left: 2.1875rem;
+      transition: width 2s, height 2s;
+    }
+
+    .linkicon {
+      display: block;
+      float: left;
+      margin-right: 6.5rem;
+      width: 2rem;
+      height: 2rem;
+      background-color: #cb6ce6;
+      padding: 0.25rem;
+    }
+
+    .floatingicon {
+      flex: 1;
+    }
