@@ -316,7 +316,7 @@ h1 {
     }
 
     .centeringtitle {
-      background-image: url(/assets/background.png);
+      background-image: url(./assets/background.png);
       display: flex;
       justify-content: center;
     }
@@ -332,7 +332,7 @@ h1 {
 .bgimage {
     display: flex;
     justify-content: center;
-    background-image: url(./assets/HPbackground.png);
+    background-image: url(./assets/background.png);
     margin-bottom: 1rem;
 }
 

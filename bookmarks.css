@@ -245,7 +245,7 @@ ul {
     }
 
     .centeringtitle {
-      background-image: url(../assets/background.png);
+      background-image: url(./assets/background.png);
       display: flex;
       justify-content: center;
     }

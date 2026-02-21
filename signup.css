@@ -5,7 +5,7 @@
             }
 
             body {
-                background-image: url(../assets/HPbackground.png);
+                background-image: url(./assets/HPbackground.png);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
