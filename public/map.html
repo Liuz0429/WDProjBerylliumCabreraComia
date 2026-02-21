@@ -10,41 +10,6 @@
     <link rel="stylesheet" href="../map.css">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    
-    <style>
-        #map {
-            margin: 2rem auto;
-            width: 70rem;
-            height: 50rem;
-            background-color:#333058;
-        }
-        
-        .customizing-hover {
-            background: #cb6ce6;
-            color: #333058;
-            font-size: 1rem;
-            border: none;
-            box-shadow: none;
-        }
-
-        .leaflet-tooltip-top:before {
-            display: none;  
-        }
-
-        .leaflet-popup-content-wrapper {
-            background: #e2a9f1;
-            color:#333058;
-            font-size: 0.8rem;
-        }
-
-        .leaflet-popup-tip {
-            display: none;
-        }
-
-        .leaflet-popup-content  {
-            font-family:'Times New Roman', Times, serif;
-        }
-    </style>
 
     <title>Map</title>
     </head>
@@ -85,16 +50,13 @@
 
             const bounds = [[0, 0], [imgH, imgW]];
 
-            L.imageOverlay('../assets/Map.jpg', bounds).addTo(map);
+            L.imageOverlay('../assets/Map.png', bounds).addTo(map);
             map.fitBounds(bounds);
             map.setMaxBounds(bounds);
             map.options.maxBoundsViscosity = 0.8;
 
             const areas = [
-                {coords : [600, 1170], 
-                    title:"City of Tears", 
-                    text: "Once known as ryowyraoyaop"},
-                {coords : [1050, 400],
+                {coords : [1080, 450],
                     title: "Howling Cliffs",
                     text: "Separates the Kingdom from an unknown wasteland. Has few inhabitants. Mato's hut, the Stag Nest, Joni's Repose, the Nightmare Lantern, and the Baldur Shell Charm can be found here."
                 },
@@ -110,22 +72,51 @@
                     title: "Greenpath",
                     text: "Inhabited by the Mosskin Tribe and under the jurisdiction of Unn, Greenpath is a very vegitatively diverse area. Zote the Mighty, Unn, the Hunter, Sheo's hut, and the Stone Sanctuary can be found here."
                 },
-                {coords : [950, 1050],
+                {coords : [900, 1020],
                     title: "Forgotten Crossroads",
-                    text: ""
+                    text: "Once the main highway of trade and transport during the Kingdom's peak, it is now overrun with victims of the Infection. The Temple of the Black Egg, Grubhome, Hot Spring, Ancestral Mound, Quirrel, Brooding Mawlek, Myla, False Knight, Gruz Mother, Salubra, and Sly canbe found here."
                 },
+                {coords : [880, 1500],
+                    title: "Resting Grounds",
+                    text: "Originally watched over and maintained by the Moth Tribe, the Resting Grounds are taken care of by only one moth, the Seer. Bugs used to conduct rituals for their dead here. The Blue Lake, Tiso, Quirrel, the Dream Nail, the Dream Shield Charm, the Soul Eater Charm, and the Grey Mourner can be found here."
+                },
+                {coords : [730, 350],
+                    title: "Queen's Gardens",
+                    text: "The Queen's Gardens were made for the Queen to have a peaceful retreat, as it was an area once belonging to Greenpath. Now it is overgrown with thorny vines and taken over by the Traitor Lords. The Love Key, the Moss Chapel, the Warrior Dream Marmu, the Traitor Lords, the White Lady, Dryya, and Le'mer's lover's grave can be found here."
+                },
+                {coords : [770, 700],
+                    title: "Fog Canyon",
+                    text: "At some point, Greenpath and the Fog Canyons were once one, but now are separate, with the Fog Canyon overrun by Oomas. Millibelle, Uumuu, Monomon, Quirrel, and the Teacher's Archives can be found here."
+                },
+                {coords : [620, 850],
+                    title: "Fungal Wastes",
+                    text: "This area is inhabited mostly by the Infected Mushroom Tribe and the Mantis Clan, who are both hostile. Leg Eater, Cloth, Quirrel, Bretta, and Warrior Dream Elder Hu can be found here. A Charm Notch, Dashmaster, Spore Shroom, Mark of Pride, Mantis Claw, and a Mask Shard can all be obtained here."
+                },
+                {coords : [600, 1300], 
+                    title:"City of Tears", 
+                    text: "Once the heart of Hallownest, the City of Tears is now a ruin, a shadow of its former self during the Kingdom's golden days. Hornet, Relic Seeker Lemm, The Nailsmith, the Soul Master, Quirrel, Grey Prince Zote, the Watcher Knights, the Collector, the Hot Springs, the Watcher's Spire, and the Tower of Love can all be found here."},
+                {coords : [500, 1800], 
+                    title:"Kingdom's Edge", 
+                    text: "Filled with falling ash and colorless plants, the Kingdom's Edge is the place where the Pale King (PK) first arrived. The falling ash is actually parts of the Cast-off Shell, the PK's decaying body. It is his original form which he shed in order to become more like his subjects. The Colosseum of Fools, Warrior Dream Markoth, Oro, Bardoon, and Hornet may be found here."},
+                {coords : [450, 500], 
+                    title:"Deepnest", 
+                    text: "The inhabitans of Deepnest are the Spider Tribe and the Weavers, the latter being outsiders to Hallownest. When their queen, Herrah the Beast, died, the Weavers fled and the Spider Tribe was overrun by the Infection. A Hot Spring can be found in the southeastern part and the Midwife can be found near the Distant Village."},
+                {coords : [450, 1250], 
+                    title:"Royal Waterways", 
+                    text: "Originally built to manage the city's waste, the Royal Waterways are now flooded due to the constant rain from the City of Tears. All trash ends up in the Junk Pit eventually, where the Godseeker, Dung Defender, Flukemarm, Tuks can be found. On the other side is Isma's Grove, where the Knight may obtain Isma's Tear."},
+                {coords : [400, 1700], 
+                    title:"The Hive", 
+                    text: "The Hive was completely separate from Hallownest, being walled off completely from the Kingdom. They all shared one mind through their Queen Vespa and the Hive Mind. After she died, her corpse still in the Hive, they too succcumbed to the Infection. Geo may be obtained here."},
+                {coords : [250, 1150], 
+                    title:"Ancient Basin", 
+                    text: "Uninhabited except for some severely Infected creatures. This was where the King built the White Palace, from where he ruled Hallownest, rarely leaving it. However, after the fall, it disappeared completely. A Vessel Fragment, Pale Ore, and Monarch Wings can be obtained here, the latter through fighting the Broken Vessel."},
             ]
 
             areas.forEach(location => {
                 const marker = L.marker(location.coords).addTo(map);
                 marker.bindPopup(`<b>${location.title}</b><br>${location.text}`);
 
-                marker.bindTooltip(location.title, {
-                    permanent: false,
-                    direction: "top",
-                    offset: [-10,-10],
-                    className: "customizing-hover",
-                });
+
             });
         </script>
 
