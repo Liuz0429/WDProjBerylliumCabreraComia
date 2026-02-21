@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../characters.css">
   <title>Characters Index</title>
 </head>
-<body onhashchange="changeBorder2()">
+<body onhashchange="changeBorder2()" onload="changeBorder2()">
   <section class="header">
     <div class="floatingicon">
       <img src="../assets/knight.png" alt="knight" class="linkicon">
@@ -993,10 +993,12 @@
         <div style="text-align: center;">
           <h2 class="name">REVEK</h2>
           <p class="fixinginfobox">Spirit's Glade</p>
+          <button class="bookmark-btn" onclick="addBookmark('characters', 'Revek', 'characters.html#revek')">⭐ Bookmark</button>
         </div>
 
         <ul class="infoboxul" style="margin-bottom: 1rem;">
-        <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
+          <li><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a></li>
+          <li><a style="color:#23a7ff" href="bookmarks.html">Access your bookmarks by clicking me!</a></li>
           <li>Protector</li>
           <li>Spirit</li>
         </ul>
@@ -1011,6 +1013,7 @@
       </section>
     </div>
         <script src="javascriptyummy.js"></script>
+        <script src="javascriptyummy2.js"></script>
 
   <footer>
     <p>© 2025 L. Cabrera & H. Comia, 9-Beryllium. </p> <br>
