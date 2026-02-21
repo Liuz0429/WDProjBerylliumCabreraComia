@@ -8,6 +8,44 @@
     <meta name="author" content="Cabrera L. & Comia H.">
     <link rel="icon" type="image/png" href="../assets/knight.png">
     <link rel="stylesheet" href="../map.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    
+    <style>
+        #map {
+            margin: 2rem auto;
+            width: 70rem;
+            height: 50rem;
+            background-color:#333058;
+        }
+        
+        .customizing-hover {
+            background: #cb6ce6;
+            color: #333058;
+            font-size: 1rem;
+            border: none;
+            box-shadow: none;
+        }
+
+        .leaflet-tooltip-top:before {
+            display: none;  
+        }
+
+        .leaflet-popup-content-wrapper {
+            background: #e2a9f1;
+            color:#333058;
+            font-size: 0.8rem;
+        }
+
+        .leaflet-popup-tip {
+            display: none;
+        }
+
+        .leaflet-popup-content  {
+            font-family:'Times New Roman', Times, serif;
+        }
+    </style>
+
     <title>Map</title>
     </head>
     <body>
@@ -29,9 +67,67 @@
             <h2>MAP</h2>
         </section>
 
-        <div class="container" style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;">
-            <img src="../assets/Map.jpg">
+        <div class="container">
+            <div id="map"></div>
         </div>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script>
+            const imgW = 2048;
+            const imgH = 1320;
+
+            const map = L.map('map', {
+                crs: L.CRS.Simple, 
+                minZoom: -1,  
+                maxZoom: 2, 
+                zoomControl: true
+            });
+
+            const bounds = [[0, 0], [imgH, imgW]];
+
+            L.imageOverlay('../assets/Map.jpg', bounds).addTo(map);
+            map.fitBounds(bounds);
+            map.setMaxBounds(bounds);
+            map.options.maxBoundsViscosity = 0.8;
+
+            const areas = [
+                {coords : [600, 1170], 
+                    title:"City of Tears", 
+                    text: "Once known as ryowyraoyaop"},
+                {coords : [1050, 400],
+                    title: "Howling Cliffs",
+                    text: "Separates the Kingdom from an unknown wasteland. Has few inhabitants. Mato's hut, the Stag Nest, Joni's Repose, the Nightmare Lantern, and the Baldur Shell Charm can be found here."
+                },
+                {coords : [1040, 920],
+                    title: "Dirtmouth",
+                    text: "The first town encountered by the Knight. Initially only has one inhabitant (Elderbug), but may house more characters depending on if certain conditions are fulfilled. Confessor Jiji may be found here east of the town."
+                },
+                {coords : [1020, 1400],
+                    title: "Crystal Peak",
+                    text: "The Crystal Peak's mines once supplied the Kingdom with a steady amount of crystals. Miners here were had such a strong purpose to work they continue working even after becoming Infected. The Crystal Guardian boss, and the Snail Shaman temple may be found here. Pale Ores, Crystal Heart Ability, and Descending Dark spell may be obtained here."
+                },
+                {coords : [930, 320],
+                    title: "Greenpath",
+                    text: "Inhabited by the Mosskin Tribe and under the jurisdiction of Unn, Greenpath is a very vegitatively diverse area. Zote the Mighty, Unn, the Hunter, Sheo's hut, and the Stone Sanctuary can be found here."
+                },
+                {coords : [950, 1050],
+                    title: "Forgotten Crossroads",
+                    text: ""
+                },
+            ]
+
+            areas.forEach(location => {
+                const marker = L.marker(location.coords).addTo(map);
+                marker.bindPopup(`<b>${location.title}</b><br>${location.text}`);
+
+                marker.bindTooltip(location.title, {
+                    permanent: false,
+                    direction: "top",
+                    offset: [-10,-10],
+                    className: "customizing-hover",
+                });
+            });
+        </script>
 
         <footer>
         <p>© 2025 L. Cabrera & H. Comia, 9-Beryllium. </p> <br>
