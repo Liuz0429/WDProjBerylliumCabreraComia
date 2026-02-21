@@ -71,6 +71,15 @@ footer {
     color: #e2a9f1;
 }
 
+.foot a {
+    color: #e2a9f1;
+}
+
+.foot a:hover {
+    color: white;
+}
+
+
     div {
       display: inline-block;
       justify-content: center;

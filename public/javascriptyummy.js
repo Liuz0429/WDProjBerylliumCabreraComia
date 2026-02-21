@@ -82,7 +82,7 @@ form.addEventListener("submit", function(e) {
     e.preventDefault(); 
 
   
- if (confirm("Sure You Want To Save Your Work?")) { 
+ if (confirm("Sure you want to sign-up with these details?")) { 
         const data = new FormData(form);
 
         const obj = Object.fromEntries(data.entries()); 
@@ -122,3 +122,12 @@ function list() {
     }
 }
 
+function intrudercheck() {
+    console.log(listofacc);
+    const listlength = Object.keys(listofacc).length;
+    if (listlength === 0) { 
+        const alertalert = document.getElementById("alert")
+        alertalert.style.display= "none";
+        document.write("You shouldn't be here... Sign up first in the homepage before accessing this page!!!")
+    }
+}

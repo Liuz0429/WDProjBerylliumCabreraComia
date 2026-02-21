@@ -95,3 +95,10 @@ footer {
     font-family:'Times New Roman', Times, serif;
     }
 
+.foot a {
+    color: #e2a9f1;
+}
+
+.foot a:hover {
+    color: white;
+}

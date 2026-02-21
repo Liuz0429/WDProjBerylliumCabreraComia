@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../bosses.css">
   <title>Bosses Index</title>
 </head>
-<body onhashchange="changeBorder3()">
+<body onhashchange="changeBorder3()" onload="changeBorder3()">
   <section class="header">
     <div class="floatingicon">
       <img src="../assets/knight.png" alt="knight" class="linkicon">
@@ -65,7 +65,6 @@
           <li><a href="">Paintmaster Sheo</a></li>
           <li><a href="">Radiance</a></li>
           <li><a href="">Soul Master</a></li>
-          <li><a href="">Soul Warrior</a></li>
         </ul>
       </section>
 
@@ -75,8 +74,8 @@
           <li><a href="">The Collector</a></li>
           <li><a href="">Uumuu</a></li>
           <li><a href="">Vengefly King</a></li>
-          <li><a href="">Watcher Knight</a></li>
-          <li><a href="">Zote</a></li>
+          <li><a href="">Watcher Knights</a></li>
+          <li><a href="">(Grey Prince) Zote</a></li>
         </ul>
       </section>
       
@@ -131,9 +130,11 @@
 
           Recommended Charms: Quick Focus, Mark of Pride/Longnail (extend reach), Spore Shroom/Defender's Crest (remove Infected Balloon)<br>
           Recommended Spells/Other: Vengeful Spirit/Shade Soul Spell (knock-back effect), Desolate Dive/Descending Dark Spell (>damage), 
-          Cyclone Smash (stagger + corner)
-
-          <br><br><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a>
+          Cyclone Slash (stagger + corner)
+          
+          <br><br><button style="margin-bottom: 1rem;" class="bookmark-btn" onclick="addBookmark('bosses', 'Broken Vessel', 'bosses.html#brokenvessel')">⭐ Bookmark</button><br>
+          <a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a><br>
+          <a style="color:#23a7ff;" href="bookmarks.html">Access your bookmarks by clicking me!</a>
         </p>
     </div>
   </div>
@@ -145,7 +146,7 @@
 
   <div class="fixing">
     <section class="centering">
-      <div class="bossinfo" style="height: 15rem;" id="broodingmawlek">
+      <div class="bossinfo" id="broodingmawlek">
         <div class="fixing">
           <h1 style="font-size: 325%;">BROODING MAWLEK</h1>
           <h3 style="font-size: 150%; margin-right: -2rem; margin-left: -2rem; padding-top:0.7rem; border-top: #e2a9f1 solid 5px;">FORGOTTEN CROSSROADS</h3>
@@ -156,13 +157,15 @@
             Recommended Charms: Baldur Shell (Healing), Sharp Shadow (Damage)<br>
             Recommended Spells/Other: Cyclone Slash (Light damage to chip away health), Mark of Pride (deal damage while
             Mawlek is attacking), & Longnail
-            <br><br><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a>
+            <br><br><button style="margin-bottom: 1rem;" class="bookmark-btn" onclick="addBookmark('bosses', 'Broken Mawlek', 'bosses.html#broodingmawlek')">⭐ Bookmark</button><br>
+          <a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a><br>
+          <a style="color:#23a7ff" href="bookmarks.html">Access your bookmarks by clicking me!</a>
           </p>
       </div>
     </div>
 
       <div class="imgbox" style="height: 17rem;">
-        <img src="../assets/Brooding Mawlek.webp" alt="knight" style="width:90%; margin-left:0.5rem; margin-top:0.5rem;">
+        <img class="infoboximg" src="../assets/Brooding Mawlek.webp" alt="knight" style="width:90%; margin-left:0.5rem; margin-top:0.5rem;">
       </div>
     </section>
 
@@ -178,11 +181,14 @@
             attack cooldown is a second shorter than Oro's. Sometimes one Brother will be idle while the other is preparing to attack
             or attacking. <br><br>
 
-            Recommended Charms: Shape of Unn & Quick Focus (safe healing), Shade Cloak & Sharp Shadow (defense against Double Slash)<br>
+            Recommended Charms: Shape of Unn & Quick Focus (safe healing), Shade Cloak (although it isn't a charm, it is still
+            a very useful item to have) & Sharp Shadow (defense against Double Slash)<br>
             Recommended Spells/Other: Howling Wraiths/Abyss Shriek (hitting during Jump Slash), Vengeful Spirit/Shade Soul (mobility, attack),
             Desolate Dive/Descending Dark (response to attack, esp Jump Slash)
 
-            <br><br><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a>
+            <br><br><button style="margin-bottom: 1rem;" class="bookmark-btn" onclick="addBookmark('bosses', 'Brothers Oro & Mato', 'bosses.html#brothersoro')">⭐ Bookmark</button><br>
+          <a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a><br>
+          <a style="color:#23a7ff" href="bookmarks.html">Access your bookmarks by clicking me!</a>
           </p>
         </div>
     </div>
@@ -212,7 +218,9 @@
             Recommended Spells/Other: Desolate Dive/Descending Dark & Vengeful Spirit/Shade Soul (for safe damage),
             Howling Wraiths/Abyss Shriek (more damage but riskier)
 
-            <br><br><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a>
+            <br><br><button style="margin-bottom: 1rem;" class="bookmark-btn" onclick="addBookmark('bosses', 'Crystal Guardian', 'bosses.html#crystalguardian')">⭐ Bookmark</button><br>
+          <a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a><br>
+          <a style="color:#23a7ff" href="bookmarks.html">Access your bookmarks by clicking me!</a>
           </p>
         </div>
     </div>
@@ -224,7 +232,7 @@
 
     <div class="fixing">
     <section class="centering">
-      <div class="bossinfo" style="height: 15rem;" id="dungdefender">
+      <div class="bossinfo" id="dungdefender">
         <div class="fixing">
           <h1 style="font-size: 350%;">DUNG DEFENDER</h1>
           <h3 style="font-size: 150%; margin-right: -2rem; margin-left: -2rem; padding-top:1rem; border-top: #e2a9f1 solid 5px;">ROYAL WATERWAYS</h3>
@@ -234,12 +242,15 @@
           <p>The Dung Defender was once known as Ogrim, one of the Five Great Knights of Hallownest. He had a close
             bond with the other four knights, but in particular he was close with Isma, whose grave he guards. He survived
             the Infection, but appears ignorant to the fate of the Pale King and the state of the Kingdom, telling himself
-            that Hallownest can be rebuilt. He passes his time by moulding statues out of the dung and rolling around in it.<br><br>
+            that Hallownest can be rebuilt. He passes his time by moulding statues out of the dung and rolling around in it. When struck with
+            the Dream Nail after defeated, you are able to fight the White Defender.<br><br>
 
             Recommended Charms: None<br>
             Recommended Spells/Other: Desolate Dive/Descending Dark (hit during burrowing for stagger effect)
 
-            <br><br><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a>
+            <br><br><button style="margin-bottom: 1rem;" class="bookmark-btn" onclick="addBookmark('bosses', 'Dung Defender', 'bosses.html#dungdefender')">⭐ Bookmark</button><br>
+          <a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a><br>
+          <a style="color:#23a7ff" href="bookmarks.html">Access your bookmarks by clicking me!</a>
           </p>
         </div>
     </div>
@@ -251,10 +262,10 @@
 
     <div class="fixing">
     <section class="centering">
-      <div class="bossinfo" style="height: 15rem;" id="falseknight">
+      <div class="bossinfo" id="falseknight">
         <div class="fixing">
           <h1 style="font-size: 350%;">FALSE KNIGHT</h1>
-          <h3 style="font-size: 150%; margin-right: -2rem; margin-left: -2rem; padding-top:1rem; border-top: #e2a9f1 solid 5px;">CRYSTAL PEAK</h3>
+          <h3 style="font-size: 150%; margin-right: -2rem; margin-left: -2rem; padding-top:1rem; border-top: #e2a9f1 solid 5px;">Forgotten Crossroads</h3>
           <ul style="font-size: 120%">
           <li>Hegemol's Stolen Armor</li>
           <li style="margin-top: 0.5rem;">Maggot</li>
@@ -267,7 +278,9 @@
             Recommended Charms: None<br>
             Recommended Spells/Other: Grubsong (for SOUL, as attacking the armor doesn't regen SOUL)
 
-            <br><br><a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a>
+            <br><br><button style="margin-bottom: 1rem;" class="bookmark-btn" onclick="addBookmark('bosses', 'False Knight', 'bosses.html#falseknight')">⭐ Bookmark</button><br>
+          <a style="color:#ffffff" href="#filterz">Click on me to go back to the filters!</a><br>
+          <a style="color:#23a7ff" href="bookmarks.html">Access your bookmarks by clicking me!</a>
           </p>
         </div>
       </div>
@@ -277,13 +290,14 @@
       </div>
     </section>
       <script src="javascriptyummy.js"></script>
-  <footer style="margin-top:10rem;">
+      <script src="javascriptyummy2.js"></script>
+  <footer class="foot" style="margin-top: 10rem;">
     <p>© 2025 L. Cabrera & H. Comia, 9-Beryllium. </p> <br>
     <p>Note: All of the information and images presented in this website are derived from the game, Hollow Knight (2017) by Team Cherry.</p> <br>
-    <p>https://www.hollowknight.com/</p> <br>
-    <p>Obtained help from https://www.w3schools.com/, https://stackoverflow.com/questions, and https://hollowknight.fandom.com/wiki/Hollow_Knight_Wiki in making this website.</p><br>
+    <p><a href="https://www.hollowknight.com/">https://www.hollowknight.com/</a></p> <br>
+    <p>Obtained help from <a href="https://www.w3schools.com/">https://www.w3schools.com/</a>, <a href="https://stackoverflow.com/questions">https://stackoverflow.com/questions</a>, and <a href="https://hollowknight.fandom.com/wiki/Hollow_Knight_Wiki">https://hollowknight.fandom.com/wiki/Hollow_Knight_Wiki</a> in making this website.</p><br>
     <p>Special thanks to <b style="font-size:1.25rem;">xbifh_citrus</b> <i style="font-size: 0.73rem;">(real name was wished to be kept anonymous)</i> for personally sending feedback and fact-checking information about Hollow Knight for this website!</p><br>
-    <p style="font-style: bold;">Work in Progress.</p>
+    <p style="font-style: bold;">WIP - More Index Entries to be added!</p>
   </footer>
 
 </body>

@@ -55,6 +55,14 @@ footer {
     color: #e2a9f1;
 }
 
+.foot a {
+    color: #e2a9f1;
+}
+
+.foot a:hover {
+    color: white;
+}
+
 section.infobox:hover {
     width: 47vw;
     height: 22vh;

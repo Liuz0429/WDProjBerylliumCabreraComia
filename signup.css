@@ -88,11 +88,13 @@
 
             fieldset {
                 border: none;
+                margin-left: 7rem;
+                padding-right: 10rem;
             }
 
             .altlinks {
                 margin-top: -25vh;
-                margin-left: -11vw;
+                margin-left: -12vw;
             }
 
             .infoboxpt2 {

@@ -338,3 +338,11 @@ h1 {
   transform: scale(1.2);
 }
 
+.foot a {
+    color: #e2a9f1;
+}
+
+.foot a:hover {
+    color: white;
+}
+
