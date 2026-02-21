@@ -13,6 +13,28 @@ body {
     background-color: #26234a;
 }
 
+    .bookmark-btn {
+  background: linear-gradient(135deg, #d06aec, #7a2ca8);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-top: 8px;
+}
+
+.bookmark-btn:hover {
+  background: linear-gradient(135deg, #ff4d6d, #a64ec2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(208, 106, 236, 0.4);
+}
+
+.bookmark-btn:active {
+  transform: scale(0.95);
+}
+
 .header {
     display: flex;
     justify-content: space-around;
