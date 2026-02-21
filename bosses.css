@@ -193,7 +193,7 @@ footer {
     }
 
     .bossnav {
-      list-style-image: url("../assets/knightresize.png");
+      list-style-image: url("/assets/knightresize.png");
       font-size: 1rem;
     }
 
