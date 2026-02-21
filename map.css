@@ -74,3 +74,24 @@ footer {
     color: #e2a9f1;
 }
 
+#map {
+    margin: 2rem auto;
+    width: 70rem;
+    height: 50rem;
+    background-color:#333058;
+}
+
+.leaflet-popup-content-wrapper {
+    background: #e2a9f1;
+    color:#333058;
+    font-size: 0.8rem;
+}
+
+.leaflet-popup-tip {
+    display: none;
+}
+
+.leaflet-popup-content  {
+    font-family:'Times New Roman', Times, serif;
+    }
+
