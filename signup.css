@@ -94,7 +94,6 @@
 
             .altlinks {
                 margin-top: -25vh;
-                margin-left: -12vw;
             }
 
             .infoboxpt2 {
@@ -119,6 +118,7 @@
 
             .o {
                 margin-top: 2vh;
+                text-align: center;
             }
 
             .o legend {
@@ -130,8 +130,8 @@
             .o button {
                 background-color: #665691;
                 color: #000000;
-                width: 8vw;
-                height: 8vh;
+                width: 10vw;
+                height: 5vh;
                 font-size: 1.2vw;
                 border-radius: 40px;
                 border: none;
@@ -139,7 +139,7 @@
             }
 
             .o button:hover {
-                background-color: #246424;
+                background-color: #cb6ce6;
                 width: 12vw;
                 height: 7vh;
                 font-size: 1.5vw;
@@ -149,7 +149,7 @@
             .o input[type="reset"] {
                 background-color: #665691;
                 color: #000000;
-                width: 8vw;
+                width: 10vw;
                 height: 5vh;
                 font-size: 1.2vw;
                 border-radius: 40px;
@@ -159,7 +159,7 @@
             }
 
             .o input[type="reset"]:hover {
-                background-color: #791313;
+                background-color: #cb6ce6;
                 width: 12vw;
                 height: 7vh;
                 font-size: 1.5vw;
