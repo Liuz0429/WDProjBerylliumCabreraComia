@@ -50,3 +50,10 @@
 ### Interactive Map
 ![Interactive Map1](./assets/InMap1.jpg)
 ![Interactive Map2](./assets/InMap2.jpg)
+
+## FINAL MODIFICATION PROPOSAL
+### 1. Design and narrative
+- The sign up page is the very first data saving in localStorage the user comes across, needing to sign up before they can use the interactive map and bookmark features of the website. There is also the sign out page where a user may remove their account completely from the localStorage. The purpose of this is to allow the user to save items using the bookmark feature, allowing them to store links to the items’ locations in localStorage. This is in order to make items on the website you intend to return to easier to find. It can be used to navigate the website easier, take note of specific characters or bosses, and so on.
+### 2. Updating and removing data from localStorage
+- In the sign out page, a user may remove their account completely from the localStorage through a delete button that clears the array that stores the data. This updates through the website, as after signing out the user cannot access bookmarks or the interactive map anymore. Bookmarks may be deleted through a delete button, which removes the data from the localStorage array it was saved in. They are updated through the display boxes which show what are the current bookmarks saved.
+### 3. Wireframes
