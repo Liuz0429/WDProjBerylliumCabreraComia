@@ -126,3 +126,25 @@ section.infobox-right:hover {
     .floatingicon {
       flex: 1;
     }
+
+    @media screen and (min-width: 400px) {
+      .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #333058;
+        height: 2.5rem;
+        width: auto;
+        font-size: 1.5rem;
+      }
+
+      .linkicon {
+        display: block;
+        float: left;
+        margin-right: 2rem;
+        width: 2rem;
+        height: 2rem;
+        background-color: #cb6ce6;
+        padding: 0.25rem;
+      }
+    }
