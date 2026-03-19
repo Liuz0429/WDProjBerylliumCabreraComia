@@ -32,6 +32,8 @@
 - [Link to Wireframe (Sign-up and Sign-in page, Bookmarks page, Interactive Map page) (Made using Canva)](https://www.canva.com/design/DAG91JzZuK8/3Pg6odTuUH-8TLotRVHOFQ/edit?utm_content=DAG91JzZuK8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 #### Sign Up
 ![Sign Up](./assets/SignUp.jpg)
+### Sign Out
+![Sign Out](./assets/SignOut.png)
 #### Homepage
 ![Homepage](./assets/homepage.jpg)
 #### Storyline
@@ -57,4 +59,6 @@
 ### 2. Updating and removing data from localStorage
 - In the sign out page, a user can sign out of their account and in turn, sign up and log in with a new account if they wish to do so. Additionally, signing out will remove access from the bookmarks and interactive map webpages again, and the bookmarks of the previous user will become inaccessible in the webpaage until that previous user signs in with that account again.
 - A user may also remove their account completely from the localStorage in the sign out page through a delete button that clears the array that stores the data. This updates through the website, as after signing out the user cannot access bookmarks or the interactive map anymore. Bookmarks may be deleted through a delete button, which removes the data from the localStorage array it was saved in. They are updated through the display boxes which show what are the current bookmarks saved.
+- Bookmarks can be added and removed to the list of bookmarks attached to each account in the localStorage.
 ### 3. Wireframes
+- The Wireframe which can be seen above has been updated to be in line with the final modifications of the proposal.
