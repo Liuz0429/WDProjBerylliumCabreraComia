@@ -16,15 +16,55 @@ body {
     background-size: cover;
 }
 
-.header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #333058;
-    height: 2.5rem;
-    width: auto;
-    font-size: 1.5rem;
-}
+.sidebar {
+  background-color: #1e1c3b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  height: 100vh;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  transform: translateX(-100%);
+ }
+
+ div nav a {
+  background-color: #333058;
+  width: 16.5vw;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+ }
+
+ div nav a:nth-child(1) {
+  padding-top: 2rem;
+ }
+
+  div nav a:hover {
+  background-color:#1e1c3b;
+  display: flex;
+  align-items: center;
+  margin-left: 0.3rem;
+  padding-left: 2rem;
+ }
+
+ .hamburgmenu {
+  background-color:#1e1c3b;
+  z-index: 1;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top:0;
+  left: 0;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+ }
+
+ .hamburgmenu:hover + .sidebar, .sidebar:hover {
+  transform: translateX(0);
+ }
 
 a.infoboxlink {
     display: block;
