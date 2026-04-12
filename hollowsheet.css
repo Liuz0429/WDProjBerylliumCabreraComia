@@ -5,7 +5,6 @@
 }
 
 h1 {
-    font-size: 70px;
     color: #cb6ce6;
 }
 
@@ -79,10 +78,10 @@ body {
  }
 
 a.infoboxlink {
-    display: block;
-    color: #e2a9f1; 
-    font-size: 2.5rem;
-    font-weight: bold;
+  display: block;
+  color: #e2a9f1; 
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 h2>a:hover {
@@ -120,83 +119,324 @@ section.infobox:hover {
     height: 22vh;
 }
 
-section.infobox-right:hover {
-    width: 47vw;
-    height: 22vh;
+
+section.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(51, 48, 88, 0.82);
+  width:60rem;
+  height: 25rem;
+  margin: auto;
 }
 
-    section.title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(51, 48, 88, 0.82);
-      width:60rem;
-      height: 25rem;
-      margin: auto;
-    }
+.centeringtitletext
+  {
+    color:#e2a9f1;
+    font-size: 11.8rem;
+    display: block;
+}
 
-    .centeringtitletext
-    {
-      color:#e2a9f1;
-      font-size: 11.8rem;
-      display: block;
-    }
+section.infobox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(51, 48, 88, 0.82);
+  width: 45vw;
+  height: 20vh;
+  transition: width 2s, height 2s;
+}
 
-    section.infobox {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(51, 48, 88, 0.82);
-      width: 45vw;
-      height: 20vh;
-      margin-left: 2.1875rem;
-      transition: width 2s, height 2s;
-    }
+.linkicon {
+  display: block;
+  float: left;
+  margin-right: 6.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #cb6ce6;
+   padding: 0.25rem;
+}
 
-    section.infobox-right {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(51, 48, 88, 0.82);
-      width: 45vw;
-      height: 20vh;
-      margin-top: 2.25rem;
-      margin-left: 2.1875rem;
-      transition: width 2s, height 2s;
-    }
+.floatingicon {
+  flex: 1;
+}
 
-    .linkicon {
-      display: block;
-      float: left;
-      margin-right: 6.5rem;
-      width: 2rem;
-      height: 2rem;
-      background-color: #cb6ce6;
-      padding: 0.25rem;
-    }
+.centering-container {
+  display: flex;
+  flex-wrap: wrap;        
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
 
-    .floatingicon {
-      flex: 1;
-    }
+p {
+  color: #cb6ce6;
+  margin-left:1.1rem;
+  font-size: 1.1rem;
+}
 
-    @media screen and (min-width: 400px) {
-      .header {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #333058;
-        height: 2.5rem;
-        width: auto;
-        font-size: 1.5rem;
-      }
+.title-the {
+  font-size: 6rem;
+  margin-left: -15rem;
+  margin-top: -15rem;
+}
 
-      .linkicon {
-        display: block;
-        float: left;
-        margin-right: 2rem;
-        width: 2rem;
-        height: 2rem;
-        background-color: #cb6ce6;
-        padding: 0.25rem;
-      }
-    }
+.title-dreamers {
+  font-size: 7rem;
+  margin-left: 1rem;
+  margin-top: -15rem;
+}
+
+.title-archive {
+  margin-left: -55rem;
+  margin-top: -13rem;
+}
+
+.title-line {
+  margin-top: 14rem;
+  margin-left: -57rem;
+  width: 58rem;
+}
+
+.title-subtext {
+  color: #cb6ce6;
+  margin-top: 12rem;
+  margin-left: -43rem;
+}
+
+@media all and (max-width: 860px) {
+  section.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(51, 48, 88, 0.82);
+    width:98vw;
+    height: 35  vh;
+  }
+
+  section.infobox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(51, 48, 88, 0.82);
+    width: 90vw;
+    height: 20vh;
+    transition: width 2s, height 2s;
+  }
+
+  a.infoboxlink {
+    display: block;
+    color: #e2a9f1; 
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  p {
+     color: #cb6ce6;
+     margin-left:1.1rem;
+     font-size: 1.5rem;
+  }
+
+  section.infobox:hover {
+    width: 95vw;
+    height: 22vh;
+  }
+
+.title-the {
+  font-size: 4rem;
+  margin-left: -6rem;
+  margin-top: -15rem;
+}
+
+.title-dreamers {
+  font-size: 5rem;
+  margin-left: 1rem;
+  margin-top: -15rem;
+}
+
+.title-archive {
+  font-size: 8.5rem;
+  margin-left: -40rem;
+  margin-top: -13rem;
+}
+
+.title-line {
+  margin-top: 10rem;
+  margin-left: -42rem;
+  width: 45rem;
+}
+
+.title-subtext {
+  color: #cb6ce6;
+  margin-top: 12rem;
+  margin-left: -36rem;
+}
+
+.sidebar {
+  background-color: #1e1c3b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  height: 100vh;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  transform: translateX(-100%);
+  z-index: 4;
+ }
+
+ div nav a {
+  background-color:#333058;
+  width: 13rem;
+  height: 12.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+ }
+
+ div nav a:nth-child(1) {
+  padding-top: 2rem;
+ }
+
+  div nav a:hover {
+  background-color:#1e1c3b;
+  display: flex;
+  align-items: center;
+  margin-left: 0.3rem;
+  padding-left: 2rem;
+ }
+
+ .hamburgmenu {
+  background-color:#1e1c3b;
+  z-index: 5;
+  width: fit-content;
+  height: 40px;
+  position: fixed;
+  top:0;
+  left: 0;
+  padding-left: 0.5rem;
+  padding-right: 1rem; 
+  padding-top: 0.5rem;
+ }
+
+}
+
+@media all and (max-width: 500px) {
+section.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(51, 48, 88, 0.82);
+    width:98vw;
+    height: 35vh;
+  }
+
+  section.infobox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(51, 48, 88, 0.82);
+    width: 90vw;
+    height: 20vh;
+    transition: width 2s, height 2s;
+  }
+
+  a.infoboxlink {
+    display: block;
+    color: #e2a9f1; 
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  p {
+     color: #cb6ce6;
+     margin-left:1.1rem;
+     font-size: 0.8rem;
+  }
+
+  section.infobox:hover {
+    width: 95vw;
+    height: 22vh;
+  }
+
+  .title-the {
+  font-size: 2rem;
+  margin-left: -1rem;
+  margin-top: -10rem;
+}
+
+.title-dreamers {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  margin-top: -10rem;
+}
+
+.title-archive {
+  font-size: 4.5rem;
+  margin-left: -21rem;
+  margin-top: -8rem;
+}
+
+.title-line {
+  margin-top: 5rem;
+  margin-left: -20rem;
+  width: 20rem;
+}
+
+.title-subtext {
+  font-size: 1rem;  
+  color: #cb6ce6;
+  margin-top: 5rem;
+  margin-left: -20rem;
+}
+
+ .sidebar {
+  background-color: #1e1c3b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  height: 100vh;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  transform: translateX(-100%);
+  z-index: 4;
+ }
+
+ div nav a {
+  background-color:#333058;
+  width: 13rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+ }
+
+ div nav a:nth-child(1) {
+  padding-top: 2rem;
+ }
+
+  div nav a:hover {
+  background-color:#1e1c3b;
+  display: flex;
+  align-items: center;
+  margin-left: 0.3rem;
+  padding-left: 2rem;
+ }
+
+ .hamburgmenu {
+  background-color:#1e1c3b;
+  z-index: 5;
+  width: fit-content;
+  height: 40px;
+  position: fixed;
+  top:0;
+  left: 0;
+  padding-left: 0.5rem;
+  padding-right: 1rem; 
+  padding-top: 0.5rem;
+ }
+
+}
