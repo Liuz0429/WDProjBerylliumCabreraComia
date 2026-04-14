@@ -31,8 +31,8 @@ body {
 
  div nav a {
   background-color:#333058;
-  width: 16.5vw;
-  height: 110px;
+  width: 210px;
+  height: 20%;
   display: flex;
   align-items: center;
   padding-left: 2rem;
@@ -204,6 +204,15 @@ p {
   margin-left: -43rem;
 }
 
+.intruder_check {
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  background-color:rgb(51, 48, 88, 0.82);
+  width: 50vw;
+  height: 10vh;
+}
+
 @media all and (max-width: 860px) {
   section.title {
     display: flex;
@@ -278,7 +287,7 @@ p {
   top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
-  height: 100vh;
+  height: 100%;
   width: 260px;
   display: flex;
   justify-content: center;
@@ -288,8 +297,8 @@ p {
 
  div nav a {
   background-color:#333058;
-  width: 13rem;
-  height: 12.5rem;
+  width: 210px;
+  height: 20%;
   display: flex;
   align-items: center;
   padding-left: 2rem;
@@ -438,5 +447,14 @@ section.title {
   padding-right: 1rem; 
   padding-top: 0.5rem;
  }
+
+ .intruder_check {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    background-color:rgb(51, 48, 88, 0.82);
+    width: 60vw;
+    height: 12vh;
+  }
 
 }

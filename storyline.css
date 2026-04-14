@@ -180,7 +180,7 @@ footer {
       height: 13rem;
       float: left;
       margin-top: 1rem;
-      margin-right: 1rem;
+      margin-left: 1rem;
     }
 
     .sidebox-right {
@@ -294,4 +294,305 @@ footer {
     .line-break {
       width: 100%;
       height: 0;
+    }
+
+    .linedesign {
+      margin-bottom: 1rem;
+      width: 65rem;
+    }
+
+    .infobox-left2 {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(51, 48, 88, 0.82);
+      width: 48rem;
+      height: 20rem;
+      float: right; 
+      margin-top: 1rem;
+    }
+
+    @media all and (max-width: 860px) {
+      .title {
+        text-align: center;
+        background-image: url(./assets/background.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        height: 10%;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 3.7rem;
+        color: #cb6ce6;
+        display: inline-block;
+      }
+    
+      h1+h2 {
+        color:#cb6ce6;
+        display: inline-block;
+        font-size: 3.5rem;
+        margin-left:1rem;
+      }
+
+      h2 {
+        color:#e2a9f1;
+        font-size:4.3rem;
+      }
+
+      .linedesign {
+        margin-bottom: 1rem;
+        width: 30rem;
+      }
+
+      div nav a {
+        background-color:#1e1c3b;
+        width: 13rem;
+        height: 8.6rem;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+       }
+      
+      div nav a:nth-child(1) {
+        padding-top: 2rem;
+       }
+      
+      div nav a:hover {
+        background-color:#333058;
+        display: flex;
+        align-items: center;
+        margin-left: 0.3rem;
+        padding-left: 2rem;
+       }
+      
+      .hamburgmenu {
+        background-color:#333058;
+        z-index: 5;
+        width: fit-content;
+        height: 40px;
+        position: fixed;
+        top:0;
+        left: 0;
+        padding-left: 0.5rem;
+        padding-right: 1rem; 
+        padding-top: 0.5rem;
+       }
+
+      .overview {
+        background-color: rgb(51, 48, 88, 0.82);
+        width: 60rem;
+        height: 23rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 10rem;
+        padding-top: 2rem;
+      }
+
+      ol {
+        color:#e2a9f1;
+        margin-left: 2rem;
+      }
+
+      .hallowseal {
+        position: absolute;
+        margin-top:1rem;
+        max-width: 32rem;
+        height: auto;
+        margin-left: -38rem;
+      }
+
+      .infobox-left1 {
+        display: block;
+        background-color: rgb(51, 48, 88, 0.82);
+        width: 95vw;
+        height: 50%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      .sidebox-right1 {
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 48, 88, 0.82);
+        color: #e2a9f1;
+        width: 16rem;
+        height: 20rem;
+        margin-top: 1rem;
+      }
+
+      .sidebox {
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 48, 88, 0.82);
+        color: #e2a9f1;
+        width: 16rem;
+        height: 13rem;
+        margin-top: 1rem;
+        margin-right: 40%;
+      }
+
+      .infobox {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 48, 88, 0.82);
+        width: 95vw;
+        height: 50%; 
+        margin-top: 1rem;
+        padding-bottom: 0.5rem;
+      }
+      
+      .infobox-left2 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 48, 88, 0.82);
+        width: 95vw;
+        height: 50%; 
+        margin-top: 1rem;
+        padding-bottom: 16%;
+      }
+    }
+
+    @media all and (max-width: 400px) {
+      .title {
+        text-align: center;
+        background-image: url(./assets/background.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        height: 10%;
+        width: 100%;
+        padding-right: 5%;
+        padding-left: 5%;
+      }
+
+      h1 {
+        font-size: 2.7rem;
+        color: #cb6ce6;
+        display: inline-block;
+      }
+    
+      h1+h2 {
+        color:#cb6ce6;
+        display: inline-block;
+        font-size: 2.5rem;
+        margin-left:1rem;
+      }
+
+      h2 {
+        color:#e2a9f1;
+        font-size:3.2rem;
+      }
+
+      .linedesign {
+        width: 22rem;
+      }
+
+      div nav a {
+        background-color:#1e1c3b;
+        width: 13rem;
+        height: 8.6rem;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+       }
+      
+      div nav a:nth-child(1) {
+        padding-top: 2rem;
+       }
+      
+      div nav a:hover {
+        background-color:#333058;
+        display: flex;
+        align-items: center;
+        margin-left: 0.3rem;
+        padding-left: 2rem;
+       }
+      
+      .hamburgmenu {
+        background-color:#333058;
+        z-index: 5;
+        width: fit-content;
+        height: 40px;
+        position: fixed;
+        top:0;
+        left: 0;
+        padding-left: 0.5rem;
+        padding-right: 1rem; 
+        padding-top: 0.5rem;
+       }
+
+      .overview {
+        background-color: rgb(51, 48, 88, 0.82);
+        height: 25rem;
+        width: 80rem;
+        margin-bottom: 5rem;
+        padding-top: 2rem;
+      }
+
+      ol {
+        color:#e2a9f1;
+        margin-left: 2rem;
+      }
+
+      .hallowseal {
+        display: none;
+      }
+
+      .infobox-left1 {
+        display: block;
+        background-color: rgb(51, 48, 88, 0.82);
+        width: 95vw;
+        height: 50%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      .sidebox-right1 {
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 48, 88, 0.82);
+        color: #e2a9f1;
+        width: 16rem;
+        height: 20rem;
+        margin-top: 1rem;
+      }
+
+      .sidebox {
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 48, 88, 0.82);
+        color: #e2a9f1;
+        width: 16rem;
+        height: 13rem;
+        margin-top: 1rem;
+        margin-right: 40%;
+      }
+
+      .infobox {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 48, 88, 0.82);
+        width: 95vw;
+        height: 50%; 
+        margin-top: 1rem;
+        padding-bottom: 0.5rem;
+      }
+      
+      .infobox-left2 {
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 48, 88, 0.82);
+        width: 95vw;
+        margin-top: 1rem;
+        padding-bottom: 5%;
+      }
     }
