@@ -24,8 +24,8 @@ body {
 
  div nav a {
   background-color:#1e1c3b;
-  width: 16.5vw;
-  height: 110px;
+  width: 220px;
+  height: 19.5vh;
   display: flex;
   align-items: center;
   padding-left: 2rem;
@@ -155,3 +155,26 @@ footer {
 .foot a:hover {
     color: white;
 }
+
+@media all and (max-width: 860px) {
+    div nav a {
+        background-color:#1e1c3b;
+        width: 220px;
+        height: 13.5vh;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+       }
+
+    .title h1 {
+        display: inline;
+        font-size: 3rem;
+        margin-right: 1rem;
+    }
+    
+    .title h2 {
+        display: inline;
+        font-size: 3rem;
+        color:#e2a9f1;
+    }
+} 
