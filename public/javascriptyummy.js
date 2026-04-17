@@ -73,8 +73,11 @@ function changeBorder3() {
 
 // For accounts
 let accountString = localStorage.getItem("accs")
+let accountsIn = localStorage.getItem("inside")
 if (!accountString) { listofacc = {} } 
 else listofacc = JSON.parse(accountString)
+if (!accountsIn) { accInside = {}}
+else accInside = JSON.parse(accountsIn);
 
 const form = document.getElementById("dForm"); 
 
@@ -82,7 +85,7 @@ form.addEventListener("submit", function(e) {
     e.preventDefault(); 
 
   
- if (confirm("Sure you want to sign-up with these details?")) { 
+ if (confirm("Sure you want to sign-up/sign-in with these details?")) { 
         const data = new FormData(form);
 
         const obj = Object.fromEntries(data.entries()); 
@@ -93,10 +96,16 @@ form.addEventListener("submit", function(e) {
                 listofacc[obj.uname][key] = obj[key];
             }
         }
+
+        newInside = {};
+        newInside[obj.uname] = (listofacc[obj.uname])
         console.log(listofacc) 
-        accountString = JSON.stringify(listofacc) 
+        accountString = JSON.stringify(listofacc)
+        accountsIn = JSON.stringify(newInside) 
         localStorage.setItem("accs", accountString) 
+        localStorage.setItem("inside", accountsIn)
         form.submit();
+        window.location.href = "../index.html"
     }
   });
 
@@ -109,25 +118,44 @@ form.addEventListener("reset", function(e) {
 
 function list() {
     console.log(listofacc);
+    console.log(accInside);
     const listlength = Object.keys(listofacc).length;
-    if (listlength === 0) { 
+    const insidelength = Object.keys(accInside).length;
+    if (insidelength === 0) { 
     const hey = [document.getElementById("yoyo"), document.getElementById("yoy")];
     hey[0].style.display = "none";
     hey[1].style.display = "none";
     }
 
-    if (listlength !== 0) {
+    if (insidelength !== 0) {
     const what = document.getElementById("son");
     what.style.display = "none";
+    } else if (insidelength == 0) {
+        const getout = document.getElementById("naoya");
+        getout.style.display = "none";
     }
 }
 
 function intrudercheck() {
     console.log(listofacc);
+    console.log(accInside);
     const listlength = Object.keys(listofacc).length;
-    if (listlength === 0) { 
+    const insidelength = Object.keys(accInside).length;
+    if (insidelength === 0) { 
         const alertalert = document.getElementById("alert")
         alertalert.style.display= "none";
         document.write("You shouldn't be here... Sign up first in the homepage before accessing this page!!!")
+    }
+}
+
+function signOut() {
+    console.log(listofacc);
+    console.log(accInside);
+    const listlength = Object.keys(listofacc).length;
+    const insidelength = Object.keys(accInside).length;
+    let text = "Are you sure you want to sign out?"
+    if (confirm(text) == true) {
+        window.location.reload();
+        localStorage.removeItem("inside")
     }
 }

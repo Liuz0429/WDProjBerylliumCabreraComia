@@ -97,6 +97,20 @@ a:hover {
       color: #e2a9f1;
 }
 
+.ttso {
+  margin: auto; 
+  text-align: center; 
+  align-content: center; 
+  background-color:rgb(51, 48, 88, 0.82); 
+  width: fit-content; 
+  height: fit-content; 
+  padding: 2rem;
+}
+
+#naoya:hover {
+  cursor: pointer;
+}
+
 footer {
     display: block;
     background-color: rgba(160, 83, 182, 0.69);
