@@ -55,8 +55,8 @@ h2 {
 
  div nav a {
   background-color:#1e1c3b;
-  width: 16.5vw;
-  height: 110px;
+  width: 11.5vw;
+  height: 20vh;
   display: flex;
   align-items: center;
   padding-left: 2rem;
@@ -147,6 +147,18 @@ footer {
         float: right; 
         margin-top: 1rem;
     }
+
+    .infobox2 {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(51, 48, 88, 0.82);
+      width: 48rem;
+      height: 22rem;
+      float: right; 
+      margin-top: 1rem;
+    }
+
     .infobox-left {
         display: inline-flex;
         justify-content: center;
@@ -351,7 +363,7 @@ footer {
       div nav a {
         background-color:#1e1c3b;
         width: 13rem;
-        height: 8.6rem;
+        height: 18vh;
         display: flex;
         align-items: center;
         padding-left: 2rem;
@@ -370,6 +382,7 @@ footer {
        }
       
       .hamburgmenu {
+        box-sizing: border-box;
         background-color:#333058;
         z-index: 5;
         width: fit-content;
@@ -388,7 +401,7 @@ footer {
         height: 23rem;
         margin-top: 5rem;
         margin-bottom: 5rem;
-        margin-left: 10rem;
+        margin-left: -1rem;
         padding-top: 2rem;
       }
 
@@ -398,11 +411,7 @@ footer {
       }
 
       .hallowseal {
-        position: absolute;
-        margin-top:1rem;
-        max-width: 32rem;
-        height: auto;
-        margin-left: -38rem;
+        display: none;
       }
 
       .infobox-left1 {
@@ -469,12 +478,12 @@ footer {
         padding-bottom: 1rem;
         height: 10%;
         width: 100%;
-        padding-right: 5%;
-        padding-left: 5%;
+        padding-right: 2%;
+        padding-left: 1%;
       }
 
       h1 {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
         color: #cb6ce6;
         display: inline-block;
       }
@@ -482,13 +491,12 @@ footer {
       h1+h2 {
         color:#cb6ce6;
         display: inline-block;
-        font-size: 2.5rem;
-        margin-left:1rem;
+        font-size: 2.3rem;
       }
 
       h2 {
         color:#e2a9f1;
-        font-size:3.2rem;
+        font-size:3rem;
       }
 
       .linedesign {
@@ -498,7 +506,7 @@ footer {
       div nav a {
         background-color:#1e1c3b;
         width: 13rem;
-        height: 8.6rem;
+        height: 8rem;
         display: flex;
         align-items: center;
         padding-left: 2rem;
@@ -534,6 +542,7 @@ footer {
         height: 25rem;
         width: 80rem;
         margin-bottom: 5rem;
+        margin-left: -1rem;
         padding-top: 2rem;
       }
 
@@ -586,6 +595,18 @@ footer {
         margin-top: 1rem;
         padding-bottom: 0.5rem;
       }
+
+      .infobox2 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 48, 88, 0.82);
+        width: 95vw;
+        height: 50%;
+        margin-top: 1rem;
+        padding-bottom: 0.5rem;
+      }
+  
       
       .infobox-left2 {
         justify-content: center;
