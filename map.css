@@ -126,6 +126,10 @@ footer {
     color: #e2a9f1;
 }
 
+footer a {
+    overflow-wrap: break-word;
+}
+
 #map {
     margin: 2rem auto;
     width: 70rem;
@@ -157,14 +161,24 @@ footer {
 }
 
 @media all and (max-width: 860px) {
+    .title {
+    color:#cb6ce6;
+    display: flex;
+    background-image: url(./assets/mapbackground.png);
+    background-position: bottom;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    }
+
     div nav a {
         background-color:#1e1c3b;
         width: 220px;
-        height: 13.5vh;
+        height: 20vh;
         display: flex;
         align-items: center;
         padding-left: 2rem;
-       }
+    }
 
     .title h1 {
         display: inline;
@@ -177,4 +191,38 @@ footer {
         font-size: 3rem;
         color:#e2a9f1;
     }
+
+    #map {
+        margin: 2rem auto;
+        width: 95vw;
+        height: 50vh;
+        background-color:#333058;
+        z-index: 1;
+    }
 } 
+
+@media all and (max-width: 400px) {
+    .title {
+        color:#cb6ce6;
+        background-image: url(./assets/mapbackground.png);
+        background-position: bottom;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        width: 100vw;
+    }   
+
+    .title h1, .title h2 {
+        margin: 0;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+    
+    .title h2 {
+        font-size: 9rem;
+        color:#e2a9f1;
+        margin-top: 2rem;
+        margin-left: -21rem;
+    }
+}

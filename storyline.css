@@ -125,6 +125,7 @@ footer {
 
 .foot a {
     color: #e2a9f1;
+    overflow-wrap: break-word;
 }
 
 .foot a:hover {
