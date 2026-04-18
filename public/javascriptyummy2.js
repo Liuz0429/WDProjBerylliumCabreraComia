@@ -1,9 +1,21 @@
 //For bookmarks
 function addBookmark(category, name, link) {
   let bookmarks = JSON.parse(localStorage.getItem("bookmarks"));
+  let accountbm = JSON.parse(localStorage.getItem("accountbm"));
+  let bminside = Object.keys(accInside);
+  console.log(bminside[0]);
+  let accountname = bminside[0];
 
   if (!bookmarks) {
     bookmarks = {
+      characters: [],
+      bosses: [],
+      charms: []
+    };
+  }
+
+  if (!accountbm) {
+    accountbm = {
       characters: [],
       bosses: [],
       charms: []
@@ -17,8 +29,10 @@ function addBookmark(category, name, link) {
   }
 
   bookmarks[category].push({ name, link });
+  accountbm[category].push({ accountname, name, link });
 
   localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  localStorage.setItem("accountbm", JSON.stringify(accountbm));
 
   alert("Bookmark saved!");
 }
