@@ -159,50 +159,11 @@ li {
     margin-top: -0.1rem;
 }
 
-.alpha {
-    background-color: rgb(51, 48, 88, 0.82);
-    display: inline-flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    width: 40rem;
-    height: 9vh;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.loc {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(51, 48, 88, 0.82);
-    width: 40rem;
-    margin-top: 2rem;
-    margin-left: 2rem;
-    height: 9vh;  
-}
 
 ul {
     font-size: 1.2rem;
     margin-left: 2rem;
     margin-top: -0.1rem;
-}
-
-.alphabetselection {
-    display: flex;
-    flex: 1;
-    margin-top: 2rem;
-    background-color: rgb(51, 48, 88, 0.82);
-    width: 40rem;
-    height: auto;
-    justify-content: center;
-    padding-bottom: 1rem;
-}
-
-.alphabetselection h2 {
-    color: #cb6ce6; 
-    margin-top: 1rem;
 }
 
     @keyframes appear {
@@ -415,10 +376,10 @@ h1 {
     display: flex;
     width: 100%;
     margin: auto;
-          color:#cb6ce6;
-      display: block;
-      margin-left: 10%;
-      font-size: 1.5rem;
+    color:#cb6ce6;
+    display: block;
+    margin-left: 10%;
+    font-size: 1.5rem;
 }
 
 .fixingpt2 {
@@ -453,8 +414,234 @@ h1 {
 
 .foot a {
     color: #e2a9f1;
+    overflow-wrap: break-word;
 }
 
 .foot a:hover {
     color: white;
+}
+
+.linedesign {
+    margin-bottom: -1.5rem;
+}
+
+.title h2 {
+    color:#cb6ce6;
+    font-size: 4.5rem;
+}
+
+.title h1 {
+    color:#e2a9f1;
+    font-size: 7rem;
+}
+
+.filters h2 {
+    margin-bottom: 1rem; 
+    color:#e2a9f1; 
+    font-size: 2.8rem;
+}
+
+.filters p {
+    text-align: center; 
+    margin-bottom: 1.3rem; 
+    font-size: 1.4rem;
+}
+
+@media all and (max-width: 860px) {
+    .title {
+      margin-top: 2.5%;
+      margin-bottom: 2.5%;
+      background-color:#333058;
+      opacity: 0.7;
+      width: 45vw;
+      height: 20%;
+    }
+
+    .INFOBOX {
+      background-color: #333058;
+      width: 95vw;
+      height: auto;
+      opacity: 0.9;
+      padding: 1%;
+      margin: auto;
+      margin-top: 2.5%;
+    }
+
+    .troublshoetingIB {
+      display: block;
+      animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 10%;
+    }
+
+    .name {
+      color: #e2a9f1;
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      margin-top: 1rem;
+      display: block;
+      text-align: center;
+    }
+
+    .fixing {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        color:#cb6ce6;
+        display: block;
+        margin-left: 10%;
+        font-size: 1rem;
+    }
+
+    .INFOBOX ul li {
+        font-size: 1rem;
+    }
+
+    .INFOBOX p {
+        font-size: 1rem;
+    }
+
+    .linedesign {
+        margin-bottom: 0.1rem;
+        width: 19rem;
+    }
+
+    .title h2 {
+        color:#cb6ce6;
+        font-size: 3.3rem;
+    }
+
+    .title h1 {
+        color:#e2a9f1;
+        font-size: 5rem;
+    }
+
+    .filters {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        padding: 1.5%;
+        background-color: #333058;
+        opacity: 0.9;
+        width: 90vw;
+        margin-top: 2rem;
+    }
+
+    .filters h2 {
+        margin-bottom: 1rem; 
+        color:#e2a9f1; 
+        font-size: 1.5rem;
+    }
+
+    .filters p {
+        text-align: center; 
+        margin-bottom: 1.3rem; 
+        font-size: 1rem;
+    }
+
+    .filterbtns {
+        margin-bottom: 1%;
+    }
+
+    .filterbtns button {
+        font-size: 1rem;
+        padding: 0.3rem;
+        font-style: italic;
+        background-color: #cb6ce6;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .filterbtns button:hover {
+        width: 5rem;
+        height: 2.5rem;
+        background-color:white;
+    }
+
+    .item {
+        padding: 0.5%;
+        border-radius: 1%;
+        background-color: aliceblue;
+        margin: 0.3em;
+    }
+
+    div div a {
+        font-size: 1rem;
+    }
+
+    .charset {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.1rem;
+    }
+
+    div nav a {
+        background-color:#1e1c3b;
+        width: 220px;
+        height: 8.5vh;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+    }
+}
+
+@media all and (max-width: 400px) {
+    div nav a {
+        background-color:#1e1c3b;
+        width: 130px;
+        height: 11vh;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+    }
+
+    .sidebar {
+        background-color: #333058;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: transform 0.3s ease-in-out;
+        height: 100vh;
+        width: 170px;
+        display: flex;
+        justify-content: center;
+        transform: translateX(-100%);
+        z-index: 2;
+    }
+
+    .linedesign {
+        margin-bottom: 0.1rem;
+        width: 13rem;
+    }
+
+    .title h2 {
+        color:#cb6ce6;
+        font-size: 2rem;
+    }
+
+    .title h1 {
+        color:#e2a9f1;
+        font-size: 3rem;
+    }
+
+    .title {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      background-color:#312e50;
+      opacity: 0.7;
+      width: 55vw;
+      height: 20vh;
+    }
+
+    .INFOBOX {
+      background-color: #333058;
+      width: 95vw;
+      height: auto;
+      opacity: 0.9;
+      padding: 1%;
+      margin: auto;
+      margin-top: 2.5%;
+    }
 }

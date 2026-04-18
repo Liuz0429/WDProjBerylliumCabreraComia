@@ -162,13 +162,13 @@ footer a {
 
 @media all and (max-width: 860px) {
     .title {
-    color:#cb6ce6;
-    display: flex;
-    background-image: url(./assets/mapbackground.png);
-    background-position: bottom;
-    justify-content: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+        color:#cb6ce6;
+        display: flex;
+        background-image: url(./assets/mapbackground.png);
+        background-position: bottom;
+        justify-content: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     div nav a {
@@ -201,7 +201,7 @@ footer a {
     }
 } 
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 450px) {
     .title {
         color:#cb6ce6;
         background-image: url(./assets/mapbackground.png);
@@ -224,5 +224,14 @@ footer a {
         color:#e2a9f1;
         margin-top: 2rem;
         margin-left: -21rem;
+    }
+
+    div nav a {
+        background-color:#1e1c3b;
+        width: 220px;
+        height: 16.5vh;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
     }
 }

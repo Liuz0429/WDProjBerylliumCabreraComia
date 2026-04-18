@@ -389,7 +389,7 @@ ul {
     div nav a {
         background-color:#1e1c3b;
         width: 125px;
-        height: 90px;
+        height: 19.5vh;
         display: flex;
         align-items: center;
         padding-left: 1rem;
@@ -402,7 +402,6 @@ ul {
       opacity: 0.85;
       width: 65%;
       height: 20%;
-      margin-left: -6rem;
     }
 
     .centeringtitle {
@@ -425,7 +424,7 @@ ul {
 
     .INFOBOX h2 {
         font-size: 2rem;
-        margin-left: -3rem;
+        text-align: left;
     }
 
     .INFOBOX {
@@ -442,5 +441,78 @@ ul {
 
     .troublshoetingIB {
       display: block;
+      margin-left: 5%;
+    }
+}
+
+@media all and (max-width: 860px) {
+    .sidebar {
+        background-color: #333058;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: transform 0.3s ease-in-out;
+        height: 100vh;
+        width: 260px;
+        display: flex;
+        justify-content: center;
+        transform: translateX(-100%);
+        z-index: 4;
+    }
+    div nav a {
+        background-color:#1e1c3b;
+        width: 220px;
+        height: 19.5vh;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+    }
+    .INFOBOX h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .INFOBOX {
+        display: block;
+        background-color: #333058;
+        width: 80vw;
+        height: auto;
+        opacity: 0.9;
+        padding: 1%;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        text-align: left;
+    }
+
+    .troublshoetingIB {
+      display: block;
+      margin-left: 5%;
+    }
+
+    .title {
+      margin-top: 10%;
+      margin-bottom: 4%;
+      background-color:#333058;
+      opacity: 0.85;
+      width: 60%;
+      height: 40%;
+    }
+
+    .centeringtitle {
+      background-color:#1e1c3b;
+    }
+
+    .title h1 {
+        color:#d06aec;
+        font-size: 4rem;
+    }
+
+    .title h2 {
+        color:#e2a9f1;
+        font-size: 9rem;
+    }
+
+    .linedesign {
+        width: 25rem;
     }
 }
