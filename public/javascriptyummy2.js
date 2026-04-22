@@ -1,38 +1,19 @@
 //For bookmarks
 function addBookmark(category, name, link) {
-  let bookmarks = JSON.parse(localStorage.getItem("bookmarks"));
-  let accountbm = JSON.parse(localStorage.getItem("accountbm"));
+  let accountString = JSON.parse(localStorage.getItem("accs"));
   let bminside = Object.keys(accInside);
   console.log(bminside[0]);
   let accountname = bminside[0];
 
-  if (!bookmarks) {
-    bookmarks = {
-      characters: [],
-      bosses: [],
-      charms: []
-    };
-  }
-
-  if (!accountbm) {
-    accountbm = {
-      characters: [],
-      bosses: [],
-      charms: []
-    };
-  }
-
-  const exists = bookmarks[category].some(item => item.name === name);
+  const exists = accountString[accountname].bookmarks[category].some(item => item.name === name);
   if (exists) {
     alert("You have already bookmarked this index entry!");
     return;
   }
 
-  bookmarks[category].push({ name, link });
-  accountbm[category].push({ accountname, name, link });
+  accountString[accountname].bookmarks[category].push({ name, link });
 
-  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
-  localStorage.setItem("accountbm", JSON.stringify(accountbm));
+  localStorage.setItem("accs", JSON.stringify(accountString));
 
   alert("Bookmark saved!");
 }
@@ -42,15 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function loadBookmarks() {
-  let bookmarks = JSON.parse(localStorage.getItem("bookmarks"));
+  let accountString = JSON.parse(localStorage.getItem("accs"));
+  let bminside = Object.keys(accInside);
+  console.log(bminside[0]);
+  let accountname = bminside[0];
 
-  if (!bookmarks) {
-    bookmarks = { characters: [], bosses: [], charms: [] };
-  }
-
-  displayCategory(bookmarks.characters, "listcharacters", "characters");
-  displayCategory(bookmarks.bosses, "listbosses", "bosses");
-  displayCategory(bookmarks.charms, "listcharms", "charms");
+  displayCategory(accountString[accountname].bookmarks.characters, "listcharacters", "characters");
+  displayCategory(accountString[accountname].bookmarks.bosses, "listbosses", "bosses");
+  displayCategory(accountString[accountname].bookmarks.charms, "listcharms", "charms");
 }
 
 function displayCategory(items, listId, category) {
@@ -84,12 +64,14 @@ function displayCategory(items, listId, category) {
 }
 
 function removeBookmark(category, index) {
-  let bookmarks = JSON.parse(localStorage.getItem("bookmarks"));
+  let accountString = JSON.parse(localStorage.getItem("accs"));
+  let bminside = Object.keys(accInside);
+  let accountname = bminside[0];
 
-  if (!bookmarks) return;
+  if (!accountString[accountname].bookmarks) return;
 
-  bookmarks[category].splice(index, 1);
-  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  accountString[accountname].bookmarks[category].splice(index, 1);
+  localStorage.setItem("accs", JSON.stringify(accountString));
 
   loadBookmarks();
 }

@@ -84,8 +84,10 @@ const form = document.getElementById("dForm");
 form.addEventListener("submit", function(e) { 
     e.preventDefault(); 
 
-  
- if (confirm("Sure you want to sign-up/sign-in with these details?")) { 
+if (listofacc.hasOwnProperty(form.uname.value) && window.location.href.includes("signup.html")) {
+    alert("Oops! This username is already taken. Please choose another one.");
+} else if (window.location.href.includes("signup.html")) { 
+        if (confirm("Sure you want to sign-up with these details?") && !listofacc[form.uname.value]) {
         const data = new FormData(form);
 
         const obj = Object.fromEntries(data.entries()); 
@@ -97,6 +99,8 @@ form.addEventListener("submit", function(e) {
             }
         }
 
+        listofacc[obj.uname].bookmarks = { characters: [], bosses: [], charms: [] };
+
         newInside = {};
         newInside[obj.uname] = (listofacc[obj.uname])
         console.log(listofacc) 
@@ -106,8 +110,22 @@ form.addEventListener("submit", function(e) {
         localStorage.setItem("inside", accountsIn)
         form.submit();
         window.location.href = "../index.html"
-    }
-  });
+    } 
+} else if (confirm("Sure you want to sign-in with these details?") && window.location.href.includes("signin.html")) {
+        const data = new FormData(form); 
+        const obj = Object.fromEntries(data.entries());
+
+        if (listofacc[obj.uname] && listofacc[obj.uname].password === obj.password) {
+            newInside = {};
+            newInside[obj.uname] = (listofacc[obj.uname])
+            accountsIn = JSON.stringify(newInside)
+            localStorage.setItem("inside", accountsIn)
+            form.submit();
+            window.location.href = "../index.html"
+        } else {
+            alert("Invalid username or password!");
+        }
+  }});
 
 
 form.addEventListener("reset", function(e) { 
@@ -144,7 +162,7 @@ function intrudercheck() {
     if (insidelength === 0) { 
         const alertalert = document.getElementById("alert")
         alertalert.style.display= "none";
-        document.write("You shouldn't be here... Sign up first in the homepage before accessing this page!!!")
+        document.write("You shouldn't be here... Sign up or sign in first in the homepage before accessing this page!!!")
     }
 }
 
